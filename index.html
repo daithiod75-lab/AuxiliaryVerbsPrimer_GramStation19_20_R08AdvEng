@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting to know Auxiliary Verbs</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & M PLUS Rounded 1c -->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'M PLUS Rounded 1c', 'Inter', sans-serif;
+        }
+        .draggable {
+            cursor: grab;
+            user-select: none;
+        }
+        .draggable:active {
+            cursor: grabbing;
+        }
+        .dropzone {
+            min-height: 52px;
+            transition: all 0.2s ease;
+        }
+        .dropzone.drag-over {
+            background-color: #fef08a;
+            border-color: #eab308;
+        }
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #print-section, #print-section * {
+                visibility: visible;
+            }
+            #print-section {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 via-pink-50 to-amber-50 min-h-screen text-slate-800">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-indigo-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-indigo-600 to-pink-500 text-white p-2.5 rounded-2xl shadow-md">
+                    <i class="fa-solid fa-graduation-cap text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-extrabold bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent">
+                        Getting to know Auxiliary Verbs
+                    </h1>
+                    <p class="text-xs text-slate-500">Unit 19 & Unit 20 Complete Interactive Workbook</p>
+                </div>
+            </div>
+            
+            <!-- Navigation Tabs -->
+            <nav class="flex flex-wrap gap-1 mt-2 sm:mt-0" id="nav-tabs">
+                <button onclick="switchTab('grammar')" class="nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-indigo-600 text-white shadow-md shadow-indigo-200" data-tab="grammar">
+                    <i class="fa-solid fa-book-open mr-1"></i> 文法解説
+                </button>
+                <button onclick="switchTab('u19')" class="nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 hover:bg-slate-100" data-tab="u19">
+                    <i class="fa-solid fa-pen-nib mr-1"></i> Unit 19
+                </button>
+                <button onclick="switchTab('u20')" class="nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 hover:bg-slate-100" data-tab="u20">
+                    <i class="fa-solid fa-pen-nib mr-1"></i> Unit 20
+                </button>
+                <button onclick="switchTab('verbs')" class="nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 hover:bg-slate-100" data-tab="verbs">
+                    <i class="fa-solid fa-bolt mr-1"></i> 動詞バンク
+                </button>
+                <button onclick="switchTab('nouns')" class="nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 hover:bg-slate-100" data-tab="nouns">
+                    <i class="fa-solid fa-box-archive mr-1"></i> 名詞バンク
+                </button>
+                <button onclick="switchTab('exam')" class="nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-pink-600 text-white shadow-md shadow-pink-200" data-tab="exam">
+                    <i class="fa-solid fa-award mr-1"></i> 模擬試験 (25問)
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- TAB 1: GRAMMAR EXPLANATION -->
+        <section id="tab-grammar" class="tab-content space-y-8">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-indigo-100 relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 text-indigo-50 opacity-50 pointer-events-none">
+                    <i class="fa-solid fa-lightbulb text-9xl"></i>
+                </div>
+                <div class="max-w-3xl">
+                    <span class="bg-indigo-100 text-indigo-700 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Grammar Master Guide</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2 mb-4">
+                        Getting to know Auxiliary Verbs (助動詞の完全理解)
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        高校生活に直結する例文やイラストイメージとともに、Unit 19（助動詞1）および Unit 20（助動詞2）の全文法項目を楽しくマスターしましょう！音声読み上げや全問題のインタラクティブ演習に対応しています。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Summary Table of Common Auxiliary Verbs -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100">
+                <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-table-list text-indigo-600 mr-2"></i> 英語の主な助動詞 まとめ早見表 (Summary of Auxiliary Verbs)
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-indigo-50 text-indigo-900 text-sm">
+                                <th class="p-3 rounded-l-xl">助動詞</th>
+                                <th class="p-3">主な意味・ニュアンス</th>
+                                <th class="p-3">同義表現・関連</th>
+                                <th class="p-3 rounded-r-xl">高校生向け例文</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-slate-100">
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">can</td>
+                                <td class="p-3">能力（…できる）、許可、可能性</td>
+                                <td class="p-3">be able to</td>
+                                <td class="p-3 text-slate-600">Emily can speak Japanese very well. <br><span class="text-xs text-slate-400">（エミリーは日本語をとても上手に話すことができる。）</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">may</td>
+                                <td class="p-3">許可（…してもよい）、推量（…かもしれない）</td>
+                                <td class="p-3">might（より弱い推量）</td>
+                                <td class="p-3 text-slate-600">That man may be our new teacher. <br><span class="text-xs text-slate-400">（あの男性は私たちの新しい先生かもしれない。）</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">must / have to</td>
+                                <td class="p-3">義務（…しなければならない）</td>
+                                <td class="p-3">have to（客観的義務）</td>
+                                <td class="p-3 text-slate-600">We must finish this work by next Tuesday. <br><span class="text-xs text-slate-400">（私たちは次の火曜日までにこの仕事を終えなければならない。）</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">must not</td>
+                                <td class="p-3">禁止（…してはならない）</td>
+                                <td class="p-3">can't, be not allowed to</td>
+                                <td class="p-3 text-slate-600">You must not eat or drink in the library. <br><span class="text-xs text-slate-400">（図書館では飲食してはいけない。）</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">don't have to</td>
+                                <td class="p-3">不必要（…する必要はない）</td>
+                                <td class="p-3">need not</td>
+                                <td class="p-3 text-slate-600">They don't have to practice soccer today. <br><span class="text-xs text-slate-400">（彼らは今日、サッカーを練習する必要はない。）</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">should</td>
+                                <td class="p-3">助言（…すべきだ、…したほうがいい）</td>
+                                <td class="p-3">had better</td>
+                                <td class="p-3 text-slate-600">You should see a doctor right away. <br><span class="text-xs text-slate-400">（あなたはすぐに医者に診てもらったほうがいい。）</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">Could / Would you ~?</td>
+                                <td class="p-3">丁寧な依頼（…していただけますか）</td>
+                                <td class="p-3">Can / Will you ~?</td>
+                                <td class="p-3 text-slate-600">Could you show me the way to the bank? <br><span class="text-xs text-slate-400">（銀行までの道を私に教えていただけますか。）</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">Shall we / I ~?</td>
+                                <td class="p-3">提案・申し出（…しませんか / …しましょうか）</td>
+                                <td class="p-3">Let's ~</td>
+                                <td class="p-3 text-slate-600">Shall we go to the movies tonight? <br><span class="text-xs text-slate-400">（今夜、映画を見に行きませんか。）</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">used to / would</td>
+                                <td class="p-3">過去の習慣（昔はよく…したものだ）</td>
+                                <td class="p-3">used to be</td>
+                                <td class="p-3 text-slate-600">I often swam in the river when I was a child. <br><span class="text-xs text-slate-400">（子どものころ、よくその川で泳いだものだ。）</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">must have done</td>
+                                <td class="p-3">過去の確信（…したに違いない）</td>
+                                <td class="p-3">may have done</td>
+                                <td class="p-3 text-slate-600">Someone must have cleaned this room. <br><span class="text-xs text-slate-400">（だれかがこの部屋を掃除したに違いない。）</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- YouTube Video Links Section -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-indigo-100">
+                <h3 class="text-xl font-bold text-slate-800 mb-3 flex items-center">
+                    <i class="fa-brands fa-youtube text-red-600 text-2xl mr-2"></i> おすすめYouTube解説動画（日本人学生向け）
+                </h3>
+                <p class="text-sm text-slate-600 mb-6">授業の予習・復習や、定期テスト対策に役立つわかりやすい日本語の英文法解説動画検索リンクです。</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <a href="https://www.youtube.com/results?search_query=%E8%8B%B1%E6%96%87%E6%B3%95+%E5%8A%A9%E5%8B%95%E8%A9%9E+%E5%9F%BA%E7%A4%8e" target="_blank" class="block bg-slate-50 hover:bg-indigo-50 border border-slate-200 hover:border-indigo-300 rounded-2xl p-4 transition group">
+                        <div class="text-red-600 font-bold text-xs mb-1 flex items-center"><i class="fa-solid fa-play mr-1"></i> YouTube Search</div>
+                        <h4 class="font-bold text-slate-800 group-hover:text-indigo-600 text-base mb-2">【高校英文法】助動詞のコアイメージ完全理解</h4>
+                        <p class="text-xs text-slate-500">can, may, must のニュアンスの違いをイラストと日本語で丁寧に解説。</p>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=%E8%8B%B1%E6%96%87%E6%B3%95+must+have+%E9%81%8E%E5%8E%BB%E5%88%86%E8%A9%9E" target="_blank" class="block bg-slate-50 hover:bg-indigo-50 border border-slate-200 hover:border-indigo-300 rounded-2xl p-4 transition group">
+                        <div class="text-red-600 font-bold text-xs mb-1 flex items-center"><i class="fa-solid fa-play mr-1"></i> YouTube Search</div>
+                        <h4 class="font-bold text-slate-800 group-hover:text-indigo-600 text-base mb-2">助動詞＋have＋過去分詞の攻略法</h4>
+                        <p class="text-xs text-slate-500">must have, should have の試験によく出る区別をわかりやすく授業！</p>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=%E4%BC%9D%E3%82%8F%E3%82%8B%E8%8B%B1%E8%AA%9E+%E5%8A%A9%E5%8B%95%E8%A9%9E+%E4%BE%9D%E9%A0%BC" target="_blank" class="block bg-slate-50 hover:bg-indigo-50 border border-slate-200 hover:border-indigo-300 rounded-2xl p-4 transition group">
+                        <div class="text-red-600 font-bold text-xs mb-1 flex items-center"><i class="fa-solid fa-play mr-1"></i> YouTube Search</div>
+                        <h4 class="font-bold text-slate-800 group-hover:text-indigo-600 text-base mb-2">中学・高校英語 助動詞の依頼・提案まとめ</h4>
+                        <p class="text-xs text-slate-500">Could you と Would you の使い分けや、Shall we の定番フレーズ。</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: UNIT 19 PRACTICE EXERCISES -->
+        <section id="tab-u19" class="tab-content hidden space-y-8">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-indigo-100">
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-100">
+                    <div>
+                        <span class="bg-indigo-100 text-indigo-700 text-xs font-extrabold px-3 py-1 rounded-full">Unit 19 練習問題</span>
+                        <h2 class="text-2xl font-extrabold text-slate-900 mt-2">助動詞（1）完全演習</h2>
+                    </div>
+                    <div class="flex gap-2">
+                        <button onclick="checkUnit19All()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-6 rounded-2xl shadow-md transition text-sm flex items-center">
+                            <i class="fa-solid fa-check mr-2"></i> Unit 19 全て答え合わせ
+                        </button>
+                    </div>
+                </div>
+
+                <div class="space-y-10" id="unit19-container">
+                    <!-- Dynamically rendered Unit 19-1 to 19-4 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: UNIT 20 PRACTICE EXERCISES -->
+        <section id="tab-u20" class="tab-content hidden space-y-8">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-pink-100">
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-100">
+                    <div>
+                        <span class="bg-pink-100 text-pink-700 text-xs font-extrabold px-3 py-1 rounded-full">Unit 20 練習問題</span>
+                        <h2 class="text-2xl font-extrabold text-slate-900 mt-2">助動詞（2）完全演習</h2>
+                    </div>
+                    <div class="flex gap-2">
+                        <button onclick="checkUnit20All()" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-2.5 px-6 rounded-2xl shadow-md transition text-sm flex items-center">
+                            <i class="fa-solid fa-check mr-2"></i> Unit 20 全て答え合わせ
+                        </button>
+                    </div>
+                </div>
+
+                <div class="space-y-10" id="unit20-container">
+                    <!-- Dynamically rendered Unit 20-1 to 20-4 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: VERB BANK -->
+        <section id="tab-verbs" class="tab-content hidden space-y-6">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-indigo-100">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <span class="bg-amber-100 text-amber-700 text-xs font-extrabold px-3 py-1 rounded-full">動詞バンク</span>
+                        <h2 class="text-2xl font-extrabold text-slate-900 mt-2">アップロードファイルに登場する動詞リスト</h2>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-600 mb-6">Unit 19 および Unit 20 のテキストに登場したすべての動詞と日本語訳の一覧です。</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" id="verb-bank-grid">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: NOUN BANK -->
+        <section id="tab-nouns" class="tab-content hidden space-y-6">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-indigo-100">
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <span class="bg-emerald-100 text-emerald-700 text-xs font-extrabold px-3 py-1 rounded-full">名詞バンク</span>
+                        <h2 class="text-2xl font-extrabold text-slate-900 mt-2">アップロードファイルに登場する名詞リスト</h2>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-600 mb-6">Unit 19 および Unit 20 のテキストに登場したすべての名詞の一覧です。</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" id="noun-bank-grid">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 6: MOCK EXAM (模擬試験 25問) -->
+        <section id="tab-exam" class="tab-content hidden space-y-6">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-pink-100">
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <span class="bg-pink-100 text-pink-700 text-xs font-extrabold px-3 py-1 rounded-full">実力判定 模擬試験</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2 mb-2">助動詞 総合模擬試験 (全25問)</h2>
+                    <p class="text-sm text-slate-600">
+                        以下の受検者情報を入力し、試験を開始してください。各問題には音声ボタンと解答確認ボタンがついており、<strong>最大3回まで</strong>回答可能です。すべて解答後、PDF保存・印刷ボタンで成績レポートを保存できます。
+                    </p>
+                </div>
+
+                <!-- Registration Form -->
+                <div id="exam-reg" class="bg-slate-50 p-6 rounded-2xl max-w-xl mx-auto border border-slate-200 mb-8 space-y-4">
+                    <h3 class="font-bold text-slate-800 text-base"><i class="fa-solid fa-id-card text-pink-600 mr-2"></i> 受検者情報の登録</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 mb-1">クラス (Class)</label>
+                            <input type="text" id="reg-class" placeholder="例: 2年A組" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-pink-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 mb-1">出席番号 (No.)</label>
+                            <input type="text" id="reg-number" placeholder="例: 18" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-pink-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-600 mb-1">氏名 (Name)</label>
+                            <input type="text" id="reg-name" placeholder="例: 山田 花子" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-pink-500">
+                        </div>
+                    </div>
+                    <button onclick="startExam()" class="w-full bg-gradient-to-r from-pink-600 to-indigo-600 hover:from-pink-700 hover:to-indigo-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-pink-200 transition text-sm">
+                        <i class="fa-solid fa-play mr-2"></i> 模擬試験を開始する (全25問)
+                    </button>
+                </div>
+
+                <!-- Exam Body (Hidden initially) -->
+                <div id="exam-body" class="hidden space-y-6">
+                    <div class="flex justify-between items-center bg-indigo-50 p-4 rounded-2xl border border-indigo-100">
+                        <div>
+                            <span class="text-xs text-indigo-700 font-bold">受検者:</span> <span id="display-student-info" class="text-sm font-extrabold text-slate-800"></span>
+                        </div>
+                        <div>
+                            <span class="text-xs text-indigo-700 font-bold">進捗:</span> <span id="exam-progress" class="text-sm font-extrabold text-slate-800">0 / 25 問回答済</span>
+                        </div>
+                    </div>
+
+                    <div id="exam-questions-container" class="space-y-6">
+                        <!-- Dynamically generated 25 mixed questions -->
+                    </div>
+
+                    <!-- PDF Save and Print Button Container -->
+                    <div class="pt-6 border-t border-slate-100 flex flex-wrap justify-between items-center gap-4">
+                        <div id="exam-score-summary" class="text-base font-bold text-slate-800"></div>
+                        <button onclick="saveAndPrintPDF()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-2xl shadow-lg shadow-emerald-200 transition flex items-center text-sm">
+                            <i class="fa-solid fa-file-pdf mr-2 text-lg"></i> PDF保存・印刷する (PDF保存・印刷)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Hidden Print Section for PDF Export -->
+    <div id="print-section" class="hidden p-8 bg-white text-slate-900">
+        <div class="text-center border-b-2 border-slate-800 pb-4 mb-6">
+            <h1 class="text-2xl font-bold">Getting to know Auxiliary Verbs 模擬試験 結果レポート</h1>
+            <p class="text-sm text-slate-600">Unit 19 & Unit 20 Mastery Evaluation Report</p>
+        </div>
+        <div class="mb-6 bg-slate-50 p-4 rounded-xl border border-slate-200 flex justify-between">
+            <div><strong>受検者情報:</strong> <span id="print-student-meta"></span></div>
+            <div><strong>日時:</strong> <span id="print-date"></span></div>
+        </div>
+        <div id="print-results-list" class="space-y-4 text-sm">
+            <!-- Populated on print -->
+        </div>
+    </div>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Tab switching function
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('bg-indigo-600', 'bg-pink-600', 'text-white', 'shadow-md');
+                btn.classList.add('bg-white', 'text-slate-600');
+            });
+            const activeBtn = document.querySelector(`[data-tab="${tabId}"]`);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-white', 'text-slate-600');
+                if (tabId === 'exam' || tabId === 'u20') {
+                    activeBtn.classList.add('bg-pink-600', 'text-white', 'shadow-md', 'shadow-pink-200');
+                } else {
+                    activeBtn.classList.add('bg-indigo-600', 'text-white', 'shadow-md', 'shadow-indigo-200');
+                }
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Text-to-speech helper
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'en-US';
+                utterance.rate = 0.9;
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+
+        // Verb Bank and Noun Bank Datasets
+        const verbBankData = [
+            { en: "speak", jp: "話す", example: "Emily can speak Japanese very well." },
+            { en: "use", jp: "使う", example: "You may use my computer." },
+            { en: "play", jp: "演奏する、遊ぶ", example: "She is able to play both the piano and the guitar." },
+            { en: "happen", jp: "起こる", example: "Accidents can happen." },
+            { en: "finish", jp: "終える", example: "We must finish this work." },
+            { en: "get up", jp: "起きる", example: "She has to get up early." },
+            { en: "help", jp: "助け合う", example: "We must help each other." },
+            { en: "practice", jp: "練習する", example: "They practice soccer." },
+            { en: "eat", jp: "食べる", example: "You must not eat." },
+            { en: "drink", jp: "飲む", example: "You must not drink." },
+            { en: "look after", jp: "世話をする", example: "My sister has to look after our dog." },
+            { en: "drive", jp: "運転する", example: "Mike drives his daughter." },
+            { en: "write", jp: "書く", example: "You write your ID number." },
+            { en: "answer", jp: "答える", example: "I can answer the question." },
+            { en: "enter", jp: "入る", example: "You may enter the room." },
+            { en: "fix", jp: "修理する", example: "They must fix the washing machine." },
+            { en: "make", jp: "作る、間違いをする", example: "Students make their plans." },
+            { en: "see", jp: "診てもらう、会う", example: "You should see a doctor." },
+            { en: "call", jp: "電話する", example: "Should I call her?" },
+            { en: "come", jp: "来る", example: "Come to school early." },
+            { en: "show", jp: "見せる、教える", example: "Could you show me the way?" },
+            { en: "open", jp: "開ける", example: "Will you open the door?" },
+            { en: "tell", jp: "伝える、話す", example: "Would you tell me your name?" },
+            { en: "mail", jp: "投函する", example: "Can you mail this letter?" },
+            { en: "go", jp: "行く", example: "Shall we go to the movies?" },
+            { en: "carry", jp: "運ぶ", example: "Shall I carry this suitcase?" },
+            { en: "park", jp: "駐車する", example: "Can I park my bicycle?" },
+            { en: "swim", jp: "泳ぐ", example: "I often swam in the river." },
+            { en: "scold", jp: "叱る", example: "My father sometimes scolded me." },
+            { en: "clean", jp: "掃除する", example: "Someone cleaned this room." },
+            { en: "check", jp: "確認する", example: "We checked the weather forecast." }
+        ];
+
+        const nounBankData = [
+            { en: "Japanese", jp: "日本語", example: "Emily can speak Japanese." },
+            { en: "computer", jp: "コンピューター", example: "Use my computer." },
+            { en: "piano", jp: "ピアノ", example: "Play the piano." },
+            { en: "guitar", jp: "ギター", example: "Play the guitar." },
+            { en: "teacher", jp: "先生、教師", example: "Our new teacher." },
+            { en: "accident", jp: "事故", example: "Accidents can happen." },
+            { en: "work", jp: "仕事", example: "Finish this work." },
+            { en: "world peace", jp: "世界平和", example: "For world peace." },
+            { en: "soccer", jp: "サッカー", example: "Practice soccer." },
+            { en: "library", jp: "図書館", example: "In the library." },
+            { en: "dog", jp: "犬", example: "Look after our dog." },
+            { en: "daughter", jp: "娘", example: "Drives his daughter." },
+            { en: "ID number", jp: "ID番号", example: "Your ID number." },
+            { en: "question", jp: "質問", example: "Answer the question." },
+            { en: "room", jp: "部屋", example: "Enter the room." },
+            { en: "washing machine", jp: "洗濯機", example: "Fix the washing machine." },
+            { en: "plan", jp: "計画", example: "Make their own plans." },
+            { en: "doctor", jp: "医者", example: "See a doctor." },
+            { en: "school", jp: "学校", example: "Come to school." },
+            { en: "bank", jp: "銀行", example: "To the bank." },
+            { en: "door", jp: "ドア", example: "Open the door." },
+            { en: "name", jp: "名前", example: "Your name." },
+            { en: "letter", jp: "手紙", example: "This letter." },
+            { en: "movies", jp: "映画", example: "To the movies." },
+            { en: "cell phone", jp: "携帯電話", example: "My cell phone." },
+            { en: "suitcase", jp: "スーツケース", example: "This suitcase." },
+            { en: "bicycle", jp: "自転車", example: "My bicycle." },
+            { en: "river", jp: "川", example: "In the river." },
+            { en: "train", jp: "電車", example: "Miss the train." },
+            { en: "game", jp: "試合", example: "Won the game." },
+            { en: "weather forecast", jp: "天気予報", example: "The weather forecast." }
+        ];
+
+        function renderBanks() {
+            const verbContainer = document.getElementById('verb-bank-grid');
+            verbContainer.innerHTML = verbBankData.map(v => `
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 hover:border-indigo-300 transition">
+                    <div class="flex justify-between items-start mb-1">
+                        <span class="font-extrabold text-indigo-600 text-base">${v.en}</span>
+                        <span class="text-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full font-bold">${v.jp}</span>
+                    </div>
+                    <p class="text-xs text-slate-500 italic mt-2">"${v.example}"</p>
+                </div>
+            `).join('');
+
+            const nounContainer = document.getElementById('noun-bank-grid');
+            nounContainer.innerHTML = nounBankData.map(n => `
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 hover:border-emerald-300 transition">
+                    <div class="flex justify-between items-start mb-1">
+                        <span class="font-extrabold text-emerald-700 text-base">${n.en}</span>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold">${n.jp}</span>
+                    </div>
+                    <p class="text-xs text-slate-500 italic mt-2">"${n.example}"</p>
+                </div>
+            `).join('');
+        }
+
+        // ==================== UNIT 19 DATA (All Problems) ====================
+        const unit19Sections = [
+            {
+                id: "19-1",
+                title: "Unit 19-1: 助動詞の意味 (can, be able to, may)",
+                desc: "次の英文の日本語訳を完成させなさい。",
+                problems: [
+                    { id: 101, en: "Emily can speak Japanese very well.", jpText: "エミリーは日本語をとても上手に話すことができる。", options: ["日本語をとても上手に話すことができる", "英語があまり話せない", "日本語を勉強している"], correct: 0 },
+                    { id: 102, en: "You may use my computer any time.", jpText: "あなたはいつでも私のパソコンを使ってよい。", options: ["いつでも私のパソコンを使ってよい", "私のパソコンを使ってはいけない", "パソコンを買わなければならない"], correct: 0 },
+                    { id: 103, en: "She is able to play both the piano and the guitar.", jpText: "彼女はピアノとギターの両方を演奏することができる。", options: ["ピアノとギターの両方を演奏することができる", "ピアノしか弾けない", "ギターを練習している"], correct: 0 },
+                    { id: 104, en: "That man may be our new teacher.", jpText: "あの男性は私たちの新しい先生かもしれない。", options: ["私たちの新しい先生かもしれない", "私たちの先生ではない", "校長先生に違いない"], correct: 0 },
+                    { id: 105, en: "Accidents can happen.", jpText: "事故は起こりうるものだ。", options: ["事故は起こりうるものだ", "事故は絶対に起きない", "事故を防止しなければならない"], correct: 0 }
+                ]
+            },
+            {
+                id: "19-2",
+                title: "Unit 19-2: 助動詞の意味 (must, have to, must not, don't have to)",
+                desc: "日本文に合うように適語を選び、書きかえなさい。",
+                problems: [
+                    { id: 106, en: "We must finish this work by next Tuesday.", jpText: "私たちは次の火曜日までにこの仕事を終えなければならない。", options: ["must", "can", "may"], correct: 0 },
+                    { id: 107, en: "She has to get up early tomorrow.", jpText: "彼女は明日、早起きしなければならない。", options: ["has", "have", "must"], correct: 0 },
+                    { id: 108, en: "We must help each other for world peace.", jpText: "私たちは世界平和のためにお互いに助け合わなければならない。", options: ["must", "should", "may"], correct: 0 },
+                    { id: 109, en: "They don't have to practice soccer today.", jpText: "彼らは今日、サッカーを練習する必要はない。", options: ["don't have to", "must not", "can't"], correct: 0 },
+                    { id: 110, en: "Eri and Kana have to stay here for a while.", jpText: "エリとカナはしばらくここにいなければならない。", options: ["have", "has", "must"], correct: 0 },
+                    { id: 111, en: "You must not eat or drink in the library.", jpText: "図書館では飲食してはいけない。", options: ["must not", "don't have to", "can"], correct: 0 },
+                    // Rewriting problems styled as dropdowns
+                    { id: 112, en: "He must get up at five. (He gets up at fiveをmustを用いて書きかえ)", jpText: "彼は5時に起かなければならない。", options: ["He must get up at five.", "He has to get up at five.", "He can get up at five."], correct: 0 },
+                    { id: 113, en: "I have to look after our dog. (My sister has to look after our dogの下線部をIに変えて)", jpText: "私は私たちの犬の世話をしなければならない。", options: ["I have to look after our dog.", "I must look after our dog.", "I can look after our dog."], correct: 0 },
+                    { id: 114, en: "Mike doesn't have to drive his daughter to school. (Mike drives his daughterをhaveを用いて「…する必要はない」に)", jpText: "マイクは娘を学校まで車で送る必要はない。", options: ["Mike doesn't have to drive his daughter to school.", "Mike must not drive his daughter.", "Mike can't drive his daughter."], correct: 0 },
+                    { id: 115, en: "You must not write your ID number here. (You write your ID number hereを助動詞で「…してはいけない」に)", jpText: "ここでID番号を書いてはならない。", options: ["You must not write your ID number here.", "You don't have to write your ID number.", "You can't write your ID number."], correct: 0 }
+                ]
+            },
+            {
+                id: "19-3",
+                title: "Unit 19-3: 〈助動詞＋動詞の原形〉の語順 (否定文・疑問文)",
+                desc: "指示にしたがって書きかえた文を選びなさい。",
+                problems: [
+                    { id: 116, en: "I cannot answer the question. (否定文に)", jpText: "私はその質問に答えることができない。", options: ["I cannot answer the question.", "I can answer not the question.", "I do not can answer."], correct: 0 },
+                    { id: 117, en: "You may not enter the room now. (否定文に)", jpText: "あなたは今その部屋に入ってはいけない。", options: ["You may not enter the room now.", "You do not may enter the room.", "You may enter not the room."], correct: 0 },
+                    { id: 118, en: "Must they fix the washing machine? (疑問文に)", jpText: "彼らは洗濯機を修理しなければなりませんか。", options: ["Must they fix the washing machine?", "Do they must fix the washing machine?", "They must fix the washing machine?"], correct: 0 },
+                    { id: 119, en: "Do the students have to make their own plans? (疑問文に)", jpText: "生徒たちは自分たちの計画を立てなければなりませんか。", options: ["Do the students have to make their own plans?", "Have the students to make their own plans?", "Must the students make their plans?"], correct: 0 }
+                ]
+            },
+            {
+                id: "19-4",
+                title: "Unit 19-4: 助言・忠告 (should, had better)",
+                desc: "日本文に合う適語を選びなさい。",
+                problems: [
+                    { id: 120, en: "You should see a doctor right away.", jpText: "あなたはすぐに医者に診てもらったほうがいい。", options: ["should", "must", "may"], correct: 0 },
+                    { id: 121, en: "Should I call her now?", jpText: "私は彼女に今、電話すべきですか。", options: ["Should I call", "Must I call", "Do I call"], correct: 0 },
+                    { id: 122, en: "You had better come to school early.", jpText: "きみたちは早く学校に来ないとだめだ。", options: ["had better come", "should come", "must come"], correct: 0 }
+                ]
+            }
+        ];
+
+        // ==================== UNIT 20 DATA (All Problems) ====================
+        const unit20Sections = [
+            {
+                id: "20-1",
+                title: "Unit 20-1: 相手に依頼する表現 (Can/Will/Could/Would you...?)",
+                desc: "語句をドラッグ＆ドロップして正しい語順に並べ替えなさい。",
+                type: "dragdrop",
+                problems: [
+                    { id: 201, promptJp: "銀行までの道を私に教えていただけますか。", scrambled: ["could", "you", "me", "to", "show", "the bank", "the way"], correct: ["could", "you", "show", "me", "the way", "to", "the bank"], fullEn: "Could you show me the way to the bank?" },
+                    { id: 202, promptJp: "そのドアを私たちのために開けてもらえますか。", scrambled: ["open", "us", "will", "for", "the door", "you"], correct: ["will", "you", "open", "the door", "for", "us"], fullEn: "Will you open the door for us?" },
+                    { id: 203, promptJp: "あなたのお名前を教えていただけますか。", scrambled: ["name", "would", "tell", "you", "your", "me"], correct: ["would", "you", "tell", "me", "your", "name"], fullEn: "Would you tell me your name?" },
+                    { id: 204, promptJp: "学校へ行く途中でこの手紙を投函してもらえますか。", scrambled: ["to school", "you", "can", "on", "this letter", "your way", "mail"], correct: ["can", "you", "mail", "this letter", "on", "your way", "to school"], fullEn: "Can you mail this letter on your way to school?" }
+                ]
+            },
+            {
+                id: "20-2",
+                title: "Unit 20-2: 許可を求める表現・提案する表現 (Can I / May I / Shall I / Shall we)",
+                desc: "語句をドラッグ＆ドロップして正しい語順に並べ替えなさい。",
+                type: "dragdrop",
+                problems: [
+                    { id: 205, promptJp: "今夜、映画を見に行きませんか。", scrambled: ["we", "shall", "the movies", "go", "tonight", "to"], correct: ["shall", "we", "go", "to", "the movies", "tonight"], fullEn: "Shall we go to the movies tonight?" },
+                    { id: 206, promptJp: "ここで携帯電話を使ってもいいですか。", scrambled: ["use", "may", "here", "my", "I", "cell phone"], correct: ["may", "I", "use", "my", "cell phone", "here"], fullEn: "May I use my cell phone here?" },
+                    { id: 207, promptJp: "このスーツケースをあなたのために私が運びましょうか。", scrambled: ["you", "shall", "this suitcase", "for", "carry", "I"], correct: ["shall", "I", "carry", "this suitcase", "for", "you"], fullEn: "Shall I carry this suitcase for you?" },
+                    { id: 208, promptJp: "あなたの家の前に自転車をとめてもいいですか。", scrambled: ["front", "can", "of", "my bicycle", "park", "in", "your house", "I"], correct: ["can", "I", "park", "my bicycle", "in", "front", "of", "your house"], fullEn: "Can I park my bicycle in front of your house?" }
+                ]
+            },
+            {
+                id: "20-3",
+                title: "Unit 20-3: 過去の習慣 (would, used to)",
+                desc: "日本文に合う適語を選びなさい。",
+                type: "dropdown",
+                problems: [
+                    { id: 209, en: "I often swam in the river when I was a child.", jpText: "私は子どものころ、よくその川で泳いだものだ。", options: ["often swam", "used to swim", "would swim"], correct: 0 },
+                    { id: 210, en: "We used to study together after school.", jpText: "私たちは放課後によく一緒に勉強したものだ。", options: ["used to study", "would study", "studied"], correct: 0 },
+                    { id: 211, en: "My father sometimes scolded my brother and me.", jpText: "父はときどき、私と弟を叱ったものだ。", options: ["sometimes scolded", "would scold", "used to scold"], correct: 0 },
+                    { id: 212, en: "There used to be a big tree here.", jpText: "以前、ここには大きな木があった。", options: ["used to be", "would be", "was"], correct: 0 }
+                ]
+            },
+            {
+                id: "20-4",
+                title: "Unit 20-4: 助動詞＋have＋過去分詞 (過去の推量・後悔)",
+                desc: "Part A (選択) および Part B (ドラッグ＆ドロップ並べ替え)",
+                type: "mixed",
+                problems: [
+                    { id: 213, en: "She's not here yet. She must have missed the train.", jpText: "彼女はまだ来ていない。彼女は電車に乗り遅れたに違いない。", options: ["must have missed", "should have missed", "may have missed"], correct: 0, subType: "dropdown" },
+                    { id: 214, en: "You should have told me about it honestly.", jpText: "あなたはそのことについて私に正直に言うべきだったのに。", options: ["should have told", "must have told", "may have told"], correct: 0, subType: "dropdown" },
+                    { id: 215, en: "They look happy. They must have won the game.", jpText: "彼らはうれしそうだ。試合に勝ったに違いない。", options: ["must have won", "should have won", "may have won"], correct: 0, subType: "dropdown" },
+                    // Drag and drop ones for 20-4 Part B
+                    { id: 216, promptJp: "私たちが来る前に、だれかがこの部屋を掃除したに違いない。", scrambled: ["cleaned", "someone", "have", "this room", "must"], correct: ["someone", "must", "have", "cleaned", "this room"], fullEn: "Someone must have cleaned this room before we came.", subType: "dragdrop" },
+                    { id: 217, promptJp: "私は、数学のテストでいくつか間違えたかもしれない。", scrambled: ["made", "I", "some mistakes", "have", "may"], correct: ["I", "may", "have", "made", "some mistakes"], fullEn: "I may have made some mistakes on the math test.", subType: "dragdrop" },
+                    { id: 218, promptJp: "私たちは出発前に天気予報を確認すべきだった。", scrambled: ["checked", "we", "have", "the weather forecast", "should"], correct: ["we", "should", "have", "checked", "the weather forecast"], fullEn: "We should have checked the weather forecast before we left.", subType: "dragdrop" }
+                ]
+            }
+        ];
+
+        // Render Unit 19 Sections
+        function renderUnit19() {
+            const container = document.getElementById('unit19-container');
+            container.innerHTML = unit19Sections.map(sec => `
+                <div class="space-y-4">
+                    <div class="bg-indigo-50 border-l-4 border-indigo-600 p-4 rounded-r-2xl">
+                        <h3 class="font-extrabold text-indigo-900 text-lg">${sec.title}</h3>
+                        <p class="text-xs text-indigo-700">${sec.desc}</p>
+                    </div>
+                    <div class="space-y-4">
+                        ${sec.problems.map((p, idx) => `
+                            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5" id="u19-q-${p.id}">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-xs font-bold text-indigo-600 bg-white px-2.5 py-1 rounded-full shadow-sm">問題 ${idx + 1}</span>
+                                    <button onclick="speakText('${p.en}')" class="text-indigo-600 hover:text-indigo-800 text-sm font-bold flex items-center bg-white px-3 py-1 rounded-xl shadow-sm border border-indigo-100">
+                                        <i class="fa-solid fa-volume-high mr-1.5"></i> 音声リスニング
+                                    </button>
+                                </div>
+                                <p class="font-bold text-slate-800 text-base mb-2 font-mono">${p.en}</p>
+                                <div class="my-3">
+                                    <select id="u19-ans-${p.id}" class="w-full sm:w-auto bg-white border-2 border-indigo-200 rounded-xl px-4 py-2 font-bold text-indigo-700 focus:outline-none focus:border-indigo-600 text-sm">
+                                        <option value="">-- 正しいものを選んでください --</option>
+                                        ${p.options.map((opt, i) => `<option value="${i}">${opt}</option>`).join('')}
+                                    </select>
+                                </div>
+                                <p class="text-xs text-slate-400 mt-1 font-medium">日本語訳: <span class="text-slate-500">${p.jpText}</span></p>
+                                <div id="u19-feedback-${p.id}" class="mt-2 text-xs font-bold"></div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function checkUnit19All() {
+            let totalCorrect = 0;
+            let totalCount = 0;
+            unit19Sections.forEach(sec => {
+                sec.problems.forEach(p => {
+                    totalCount++;
+                    const sel = document.getElementById(`u19-ans-${p.id}`);
+                    const fb = document.getElementById(`u19-feedback-${p.id}`);
+                    if (sel && sel.value !== "") {
+                        if (parseInt(sel.value) === p.correct) {
+                            fb.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check mr-1"></i> 正解です！</span>`;
+                            totalCorrect++;
+                        } else {
+                            fb.innerHTML = `<span class="text-pink-600"><i class="fa-solid fa-circle-xmark mr-1"></i> 不正解です。もう一度考えてみましょう。</span>`;
+                        }
+                    } else {
+                        fb.innerHTML = `<span class="text-amber-600">選択肢が選ばれていません。</span>`;
+                    }
+                });
+            });
+            showModal(`Unit 19 採点結果: ${totalCorrect} / ${totalCount} 問正解`);
+        }
+
+        // Render Unit 20 Sections (supporting Dropdown and Drag-and-Drop)
+        function renderUnit20() {
+            const container = document.getElementById('unit20-container');
+            container.innerHTML = unit20Sections.map(sec => `
+                <div class="space-y-4">
+                    <div class="bg-pink-50 border-l-4 border-pink-600 p-4 rounded-r-2xl">
+                        <h3 class="font-extrabold text-pink-900 text-lg">${sec.title}</h3>
+                        <p class="text-xs text-pink-700">${sec.desc}</p>
+                    </div>
+                    <div class="space-y-4">
+                        ${sec.problems.map((p, idx) => {
+                            if (p.subType === 'dropdown' || (!p.subType && sec.type === 'dropdown')) {
+                                return `
+                                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5" id="u20-q-${p.id}">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <span class="text-xs font-bold text-pink-600 bg-white px-2.5 py-1 rounded-full shadow-sm">問題 ${idx + 1}</span>
+                                            <button onclick="speakText('${p.en}')" class="text-pink-600 hover:text-pink-800 text-sm font-bold flex items-center bg-white px-3 py-1 rounded-xl shadow-sm border border-pink-100">
+                                                <i class="fa-solid fa-volume-high mr-1.5"></i> 音声リスニング
+                                            </button>
+                                        </div>
+                                        <p class="font-bold text-slate-800 text-base mb-2 font-mono">${p.en}</p>
+                                        <div class="my-3">
+                                            <select id="u20-ans-${p.id}" class="w-full sm:w-auto bg-white border-2 border-pink-200 rounded-xl px-4 py-2 font-bold text-pink-700 focus:outline-none focus:border-pink-600 text-sm">
+                                                <option value="">-- 正しいものを選んでください --</option>
+                                                ${p.options.map((opt, i) => `<option value="${i}">${opt}</option>`).join('')}
+                                            </select>
+                                        </div>
+                                        <p class="text-xs text-slate-400 mt-1 font-medium">日本語訳: <span class="text-slate-500">${p.jpText}</span></p>
+                                        <div id="u20-feedback-${p.id}" class="mt-2 text-xs font-bold"></div>
+                                    </div>
+                                `;
+                            } else {
+                                // Drag and drop rearrangement problem with dropzone boxes
+                                return `
+                                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5" id="u20-q-${p.id}">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <span class="text-xs font-bold text-pink-600 bg-white px-2.5 py-1 rounded-full shadow-sm">並べ替え問 ${idx + 1}</span>
+                                            <button onclick="speakText('${p.fullEn}')" class="text-pink-600 hover:text-pink-800 text-sm font-bold flex items-center bg-white px-3 py-1 rounded-xl shadow-sm border border-pink-100">
+                                                <i class="fa-solid fa-volume-high mr-1.5"></i> 音声リスニング
+                                            </button>
+                                        </div>
+                                        <p class="font-bold text-slate-800 text-base mb-1">${p.promptJp}</p>
+                                        <p class="text-xs text-slate-400 mb-4 font-mono">ヒント・解答目安: ${p.fullEn}</p>
+
+                                        <!-- Dropzone Area -->
+                                        <div class="mb-4">
+                                            <label class="block text-xs font-bold text-slate-500 mb-1">下の単語をボックスにドラッグ＆ドロップして並べよう：</label>
+                                            <div class="dropzone flex flex-wrap gap-2 p-3 bg-white border-2 border-dashed border-slate-300 rounded-2xl" id="dropzone-${p.id}" ondragover="allowDrop(event)" ondragleave="removeDropStyle(event)" ondrop="dropWord(event, ${p.id})">
+                                                ${p.scrambled.map((_, i) => `<div class="slot bg-slate-100 border border-slate-300 rounded-xl px-3 py-2 text-xs font-bold text-slate-400 min-w-[70px] text-center flex items-center justify-center">ボックス ${i+1}</div>`).join('')}
+                                            </div>
+                                        </div>
+
+                                        <!-- Word Pool -->
+                                        <div class="flex flex-wrap gap-2 mb-3" id="pool-${p.id}">
+                                            ${p.scrambled.map((word, i) => `
+                                                <div draggable="true" ondragstart="drag(event)" id="word-${p.id}-${i}" data-word="${word}" class="draggable bg-pink-600 text-white px-3 py-2 rounded-xl text-xs font-bold shadow-md hover:bg-pink-700 transition">
+                                                    ${word}
+                                                </div>
+                                            `).join('')}
+                                        </div>
+
+                                        <div class="flex items-center justify-between pt-2">
+                                            <button onclick="resetUnit20Drag(${p.id})" class="text-xs text-slate-500 hover:text-slate-800 underline"><i class="fa-solid fa-rotate-right mr-1"></i> やり直す</button>
+                                            <button onclick="checkUnit20DragProblem(${p.id})" class="bg-pink-600 hover:bg-pink-700 text-white font-bold px-4 py-1.5 rounded-xl text-xs shadow-sm">この問題をチェック</button>
+                                        </div>
+                                        <div id="u20-feedback-${p.id}" class="mt-2 text-xs font-bold"></div>
+                                    </div>
+                                `;
+                            }
+                        }).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Drag and drop event handlers
+        function allowDrop(ev) {
+            ev.preventDefault();
+            ev.currentTarget.classList.add('drag-over');
+        }
+
+        function removeDropStyle(ev) {
+            ev.currentTarget.classList.remove('drag-over');
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function dropWord(ev, problemId) {
+            ev.preventDefault();
+            ev.currentTarget.classList.remove('drag-over');
+            const data = ev.dataTransfer.getData("text");
+            const draggedElement = document.getElementById(data);
+            if (draggedElement) {
+                // If there are placeholder slot texts, remove them on first drop
+                const dropzone = document.getElementById(`dropzone-${problemId}`);
+                const slots = dropzone.querySelectorAll('.slot');
+                if (slots.length > 0) {
+                    dropzone.innerHTML = '';
+                }
+                dropzone.appendChild(draggedElement);
+            }
+        }
+
+        function resetUnit20Drag(problemId) {
+            renderUnit20();
+        }
+
+        function checkUnit20DragProblem(problemId) {
+            let targetProblem = null;
+            for (let sec of unit20Sections) {
+                let found = sec.problems.find(p => p.id === problemId);
+                if (found) { targetProblem = found; break; }
+            }
+            if (!targetProblem) return;
+
+            const dropzone = document.getElementById(`dropzone-${problemId}`);
+            const words = Array.from(dropzone.querySelectorAll('.draggable')).map(el => el.getAttribute('data-word'));
+            const feedback = document.getElementById(`u20-feedback-${problemId}`);
+
+            if (words.length !== targetProblem.correct.length) {
+                feedback.innerHTML = `<span class="text-pink-600"><i class="fa-solid fa-circle-xmark mr-1"></i> すべての単語をドロップしてください。</span>`;
+                return;
+            }
+
+            const isCorrect = words.every((w, idx) => w === targetProblem.correct[idx]);
+            if (isCorrect) {
+                feedback.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check mr-1"></i> 正解です！完璧です！</span>`;
+            } else {
+                feedback.innerHTML = `<span class="text-pink-600"><i class="fa-solid fa-circle-xmark mr-1"></i> 並び順が違います。もう一度トライ！</span>`;
+            }
+        }
+
+        function checkUnit20All() {
+            let totalCorrect = 0;
+            let totalCount = 0;
+            unit20Sections.forEach(sec => {
+                sec.problems.forEach(p => {
+                    totalCount++;
+                    if (p.subType === 'dropdown' || (!p.subType && sec.type === 'dropdown')) {
+                        const sel = document.getElementById(`u20-ans-${p.id}`);
+                        const fb = document.getElementById(`u20-feedback-${p.id}`);
+                        if (sel && sel.value !== "") {
+                            if (parseInt(sel.value) === p.correct) {
+                                fb.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check mr-1"></i> 正解です！</span>`;
+                                totalCorrect++;
+                            } else {
+                                fb.innerHTML = `<span class="text-pink-600"><i class="fa-solid fa-circle-xmark mr-1"></i> 不正解です。</span>`;
+                            }
+                        }
+                    } else {
+                        const dropzone = document.getElementById(`dropzone-${p.id}`);
+                        const words = dropzone ? Array.from(dropzone.querySelectorAll('.draggable')).map(el => el.getAttribute('data-word')) : [];
+                        const fb = document.getElementById(`u20-feedback-${p.id}`);
+                        if (words.length === p.correct.length && words.every((w, idx) => w === p.correct[idx])) {
+                            fb.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check mr-1"></i> 正解です！</span>`;
+                            totalCorrect++;
+                        } else {
+                            fb.innerHTML = `<span class="text-pink-600"><i class="fa-solid fa-circle-xmark mr-1"></i> 不正解または未完成です。</span>`;
+                        }
+                    }
+                });
+            });
+            showModal(`Unit 20 採点結果: ${totalCorrect} / ${totalCount} 問正解`);
+        }
+
+        // ==================== MOCK EXAM (25 Questions with Audio & 3 Attempts) ====================
+        let studentInfo = { name: '', classNum: '', number: '' };
+        let examQuestions = [];
+        let examAttempts = {};
+        let examScores = {};
+
+        function generateMockExamQuestions() {
+            const bank = [];
+            for (let i = 1; i <= 25; i++) {
+                const types = ['can_may', 'must_should', 'past_modal', 'request_offer'];
+                const t = types[i % types.length];
+                let q = { id: i };
+
+                if (t === 'can_may') {
+                    q.prompt = `Q${i}: 空欄に最も適する助動詞を選びなさい: "You __________ use my computer if you need it."`;
+                    q.options = ["may", "must", "should"];
+                    q.correct = "may";
+                    q.jp = "必要なら私のパソコンを使ってよい。";
+                    q.audio = "You may use my computer if you need it.";
+                } else if (t === 'must_should') {
+                    q.prompt = `Q${i}: 空欄に最も適する助動詞を選びなさい: "We __________ finish this work by tomorrow."`;
+                    q.options = ["must", "can", "may"];
+                    q.correct = "must";
+                    q.jp = "私たちは明日までにこの仕事を終えなければならない。";
+                    q.audio = "We must finish this work by tomorrow.";
+                } else if (t === 'past_modal') {
+                    q.prompt = `Q${i}: 過去の推量を表す文として正しいものを選びなさい: "She __________ missed the train because she looks worried."`;
+                    q.options = ["must have", "should have", "can have"];
+                    q.correct = "must have";
+                    q.jp = "彼女は心配そうに見えるので、電車に乗り遅れたに違いない。";
+                    q.audio = "She must have missed the train because she looks worried.";
+                } else {
+                    q.prompt = `Q${i}: 丁寧な依頼を表す文として最も適するものを選びなさい: "__________ you show me the way to the station?"`;
+                    q.options = ["Could", "May", "Shall"];
+                    q.correct = "Could";
+                    q.jp = "駅までの道を教えていただけますか。";
+                    q.audio = "Could you show me the way to the station?";
+                }
+                bank.push(q);
+            }
+            return bank;
+        }
+
+        function startExam() {
+            const name = document.getElementById('reg-name').value.trim();
+            const classNum = document.getElementById('reg-class').value.trim();
+            const number = document.getElementById('reg-number').value.trim();
+
+            if (!name || !classNum || !number) {
+                showModal("クラス、出席番号、氏名をすべて入力してください。");
+                return;
+            }
+
+            studentInfo = { name, classNum, number };
+            document.getElementById('display-student-info').innerText = `${classNum} ${number}番 ${name} さん`;
+            document.getElementById('exam-reg').classList.add('hidden');
+            document.getElementById('exam-body').classList.remove('hidden');
+
+            examQuestions = generateMockExamQuestions();
+            examAttempts = {};
+            examQuestions.forEach(q => examAttempts[q.id] = 3); // 3 attempts limit
+
+            renderExamQuestions();
+            saveLocalProgress();
+        }
+
+        function renderExamQuestions() {
+            const container = document.getElementById('exam-questions-container');
+            container.innerHTML = examQuestions.map(q => `
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5" id="exam-q-${q.id}">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <span class="text-xs font-bold text-pink-600 bg-pink-50 px-2.5 py-1 rounded-full">第 ${q.id} 問</span>
+                        <div class="flex items-center gap-3">
+                            <button onclick="speakText('${q.audio}')" class="text-pink-600 hover:text-pink-800 text-xs font-bold flex items-center bg-white px-3 py-1 rounded-xl shadow-sm border border-pink-100">
+                                <i class="fa-solid fa-volume-high mr-1"></i> 問題音声
+                            </button>
+                            <span class="text-xs text-slate-500 font-bold" id="attempts-left-${q.id}">残り挑戦回数: ${examAttempts[q.id]}回</span>
+                        </div>
+                    </div>
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">${q.prompt}</p>
+                    
+                    <div class="space-y-2 mb-3">
+                        ${q.options.map((opt, i) => `
+                            <label class="flex items-center space-x-3 bg-white p-3 rounded-xl border border-slate-200 cursor-pointer hover:bg-pink-50 transition">
+                                <input type="radio" name="exam-ans-${q.id}" value="${opt}" class="text-pink-600 focus:ring-pink-500">
+                                <span class="text-sm font-bold text-slate-700">${opt}</span>
+                            </label>
+                        `).join('')}
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <button onclick="checkExamQuestion(${q.id})" id="btn-check-${q.id}" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-6 rounded-xl text-xs shadow-md transition">
+                            解答確認 (Check Answer)
+                        </button>
+                        <span class="text-xs text-slate-400 font-medium">日本語訳: <span class="text-slate-500">${q.jp}</span></span>
+                    </div>
+                    <div id="exam-feedback-${q.id}" class="mt-2 text-xs font-bold"></div>
+                </div>
+            `).join('');
+        }
+
+        function checkExamQuestion(questionId) {
+            const q = examQuestions.find(item => item.id === questionId);
+            const selected = document.querySelector(`input[name="exam-ans-${questionId}"]:checked`);
+            const feedback = document.getElementById(`exam-feedback-${questionId}`);
+            const attemptsEl = document.getElementById(`attempts-left-${questionId}`);
+            const checkBtn = document.getElementById(`btn-check-${questionId}`);
+
+            if (!selected) {
+                feedback.innerHTML = `<span class="text-pink-600">選択肢を選んでください。</span>`;
+                return;
+            }
+
+            if (examAttempts[questionId] <= 0) return;
+
+            const userAns = selected.value;
+            if (userAns === q.correct) {
+                feedback.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check mr-1"></i> 正解です！素晴らしい！</span>`;
+                examScores[questionId] = true;
+                checkBtn.disabled = true;
+                checkBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                document.querySelectorAll(`input[name="exam-ans-${questionId}"]`).forEach(inp => inp.disabled = true);
+            } else {
+                examAttempts[questionId]--;
+                attemptsEl.innerText = `残り挑戦回数: ${examAttempts[questionId]}回`;
+                if (examAttempts[questionId] > 0) {
+                    feedback.innerHTML = `<span class="text-pink-600"><i class="fa-solid fa-circle-xmark mr-1"></i> 不正解です。もう一度トライしてください！ (Try again)</span>`;
+                } else {
+                    feedback.innerHTML = `<span class="text-slate-500"><i class="fa-solid fa-triangle-exclamation mr-1"></i> 挑戦回数が終了しました。次の問題に進んでください。</span>`;
+                    examScores[questionId] = false;
+                    checkBtn.disabled = true;
+                    checkBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                    document.querySelectorAll(`input[name="exam-ans-${questionId}"]`).forEach(inp => inp.disabled = true);
+                }
+            }
+            updateExamProgress();
+            saveLocalProgress();
+        }
+
+        function updateExamProgress() {
+            const answeredCount = Object.keys(examScores).length;
+            document.getElementById('exam-progress').innerText = `${answeredCount} / 25 問回答済`;
+            
+            if (answeredCount === 25) {
+                const correctTotal = Object.values(examScores).filter(v => v).length;
+                document.getElementById('exam-score-summary').innerHTML = `試験終了！ 正解数: <span class="text-pink-600 font-extrabold text-xl">${correctTotal} / 25 問</span>`;
+            }
+        }
+
+        // Local Storage persistence
+        function saveLocalProgress() {
+            const data = {
+                studentInfo,
+                examScores,
+                examAttempts,
+                timestamp: new Date().toISOString()
+            };
+            try {
+                localStorage.setItem('getting_to_know_auxiliary_verbs_progress', JSON.stringify(data));
+            } catch (e) {
+                console.error("Local storage error", e);
+            }
+        }
+
+        // PDF Save and Print Functionality
+        function saveAndPrintPDF() {
+            const correctTotal = Object.values(examScores).filter(v => v).length;
+            document.getElementById('print-student-meta').innerText = `クラス: ${studentInfo.classNum} | 出席番号: ${studentInfo.number} | 氏名: ${studentInfo.name}`;
+            document.getElementById('print-date').innerText = new Date().toLocaleString();
+
+            const listContainer = document.getElementById('print-results-list');
+            listContainer.innerHTML = examQuestions.map(q => {
+                const isCorrect = examScores[q.id];
+                const statusText = isCorrect === true ? '正解 (Correct)' : isCorrect === false ? '不正解/終了 (Incorrect)' : '未回答 (Unanswered)';
+                return `
+                    <div class="border-b border-slate-200 pb-2">
+                        <p class="font-bold">第 ${q.id} 問: ${q.prompt}</p>
+                        <p class="text-slate-600">正解: ${q.correct} | 判定: <strong>${statusText}</strong></p>
+                    </div>
+                `;
+            }).join('') + `<div class="mt-4 text-lg font-bold">総合得点: ${correctTotal} / 25 問正解</div>`;
+
+            window.print();
+        }
+
+        // Custom Modal helper
+        function showModal(message) {
+            const modal = document.createElement('div');
+            modal.className = "fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 flex items-center justify-center p-4";
+            modal.innerHTML = `
+                <div class="bg-white rounded-3xl p-6 max-w-sm w-full shadow-2xl text-center space-y-4">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto text-xl">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <p class="text-slate-800 font-bold text-base">${message}</p>
+                    <button onclick="this.closest('.fixed').remove()" class="w-full bg-indigo-600 text-white font-bold py-2.5 rounded-xl shadow-md hover:bg-indigo-700 transition text-sm">
+                        OK
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
+        // Initialize App on load
+        window.onload = function() {
+            renderBanks();
+            renderUnit19();
+            renderUnit20();
+            
+            try {
+                const saved = localStorage.getItem('getting_to_know_auxiliary_verbs_progress');
+                if (saved) {
+                    const parsed = JSON.parse(saved);
+                    if (parsed.studentInfo && parsed.studentInfo.name) {
+                        document.getElementById('reg-name').value = parsed.studentInfo.name;
+                        document.getElementById('reg-class').value = parsed.studentInfo.classNum;
+                        document.getElementById('reg-number').value = parsed.studentInfo.number;
+                    }
+                }
+            } catch (e) {
+                console.error("Could not load saved progress", e);
+            }
+        };
+    </script>
+</body>
+</html>
