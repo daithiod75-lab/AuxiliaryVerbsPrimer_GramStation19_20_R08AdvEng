@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting to know Auxiliary Verbs</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- html2pdf.js library for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'M PLUS Rounded 1c', 'Inter', sans-serif;
+        }
+        .drag-chip {
+            touch-action: none;
+            user-select: none;
+        }
+        .drop-slot {
+            min-height: 48px;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 via-pink-50 to-amber-50 min-h-screen text-slate-800">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-indigo-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-indigo-600 to-pink-500 text-white p-2.5 rounded-2xl shadow-md">
+                    <i class="fa-solid fa-graduation-cap text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-extrabold bg-gradient-to-r from-indigo-600 to-pink-600 bg-clip-text text-transparent">
+                        Getting to know Auxiliary Verbs
+                    </h1>
+                    <p class="text-xs text-slate-500">Unit 19 & Unit 20 Complete Interactive Workbook (Fully Corrected)</p>
+                </div>
+            </div>
+            
+            <nav class="flex flex-wrap gap-1 mt-2 sm:mt-0" id="nav-tabs">
+                <button onclick="switchTab('grammar')" class="nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-indigo-600 text-white shadow-md shadow-indigo-200" data-tab="grammar">
+                    <i class="fa-solid fa-book-open mr-1"></i> 文法解説
+                </button>
+                <button onclick="switchTab('u19')" class="nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 hover:bg-slate-100" data-tab="u19">
+                    <i class="fa-solid fa-pen-nib mr-1"></i> Unit 19
+                </button>
+                <button onclick="switchTab('u20')" class="nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 hover:bg-slate-100" data-tab="u20">
+                    <i class="fa-solid fa-pen-nib mr-1"></i> Unit 20
+                </button>
+                <button onclick="switchTab('verbs')" class="nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 hover:bg-slate-100" data-tab="verbs">
+                    <i class="fa-solid fa-bolt mr-1"></i> 動詞バンク
+                </button>
+                <button onclick="switchTab('nouns')" class="nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 hover:bg-slate-100" data-tab="nouns">
+                    <i class="fa-solid fa-box-archive mr-1"></i> 名詞バンク
+                </button>
+                <button onclick="switchTab('exam')" class="nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 hover:bg-slate-100" data-tab="exam">
+                    <i class="fa-solid fa-award mr-1"></i> 模擬試験 (25問)
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- Grammar Explanations Tab -->
+        <section id="tab-grammar" class="tab-content space-y-8">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-indigo-100 relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 text-indigo-50 opacity-50 pointer-events-none">
+                    <i class="fa-solid fa-lightbulb text-9xl"></i>
+                </div>
+                <div class="max-w-3xl">
+                    <span class="bg-indigo-100 text-indigo-700 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Grammar Master Guide</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2 mb-4">
+                        Getting to know Auxiliary Verbs (助動詞の完全理解)
+                    </h2>
+                    <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                        高校生活に直結する例文とともに、Unit 19（助動詞の基礎）および Unit 20（助動詞の発展・完了形等）のすべての問題を完全改訂版としてお届けします。選択肢のランダム化、適切な空欄補充、および実際の概念ヒントの付与を行いました。
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100">
+                <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-table-list text-indigo-600 mr-2"></i> 英語の主な助動詞 まとめ早見表
+                </h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-indigo-50 text-indigo-900 text-sm">
+                                <th class="p-3 rounded-l-xl">助動詞</th>
+                                <th class="p-3">主な意味・ニュアンス</th>
+                                <th class="p-3">同義表現・関連</th>
+                                <th class="p-3 rounded-r-xl">高校生向け例文</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-slate-100">
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">can</td>
+                                <td class="p-3">能力（…できる）、許可、可能性</td>
+                                <td class="p-3">be able to</td>
+                                <td class="p-3 text-slate-700">Emily can speak Japanese very well. <br><span class="text-xs text-slate-500">（エミリーは日本語をとても上手に話すことができる。）</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">may</td>
+                                <td class="p-3">許可（…してもよい）、推量（…かもしれない）</td>
+                                <td class="p-3">might（より弱い推量）</td>
+                                <td class="p-3 text-slate-700">That man may be our new teacher. <br><span class="text-xs text-slate-500">（あの男性は私たちの新しい先生かもしれない。）</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">must / have to</td>
+                                <td class="p-3">義務（…しなければならない）</td>
+                                <td class="p-3">have to（客観的義務）</td>
+                                <td class="p-3 text-slate-700">We must finish this work by next Tuesday. <br><span class="text-xs text-slate-500">（私たちは次の火曜日までにこの仕事を終えなければならない。）</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">should</td>
+                                <td class="p-3">助言（…すべきだ）</td>
+                                <td class="p-3">had better</td>
+                                <td class="p-3 text-slate-700">You should see a doctor right away. <br><span class="text-xs text-slate-500">（あなたはすぐに医者に診てもらったほうがいい。）</span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="p-3 font-bold text-indigo-600">should have done</td>
+                                <td class="p-3">過去の後悔（…すべきだったのに）</td>
+                                <td class="p-3">ought to have done</td>
+                                <td class="p-3 text-slate-700">I should have studied harder for the exam. <br><span class="text-xs text-slate-500">（もっと一生懸命テスト勉強をすべきだったのに。）</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-u19" class="tab-content space-y-8 hidden">
+            <div class="bg-indigo-100 border border-indigo-300 rounded-3xl p-6 sm:p-8 shadow-md">
+                <span class="bg-indigo-200 text-indigo-900 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Unit 19</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-indigo-950 mt-2 mb-2">助動詞の基礎 (Can, May, Must, Should)</h2>
+                <p class="text-indigo-900 text-sm font-medium">選択肢は完全にランダム化され、適切な空欄補充や文選択を行います。</p>
+            </div>
+
+            <!-- Unit 19-1 -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center">
+                        <span class="bg-indigo-100 text-indigo-700 w-8 h-8 rounded-xl flex items-center justify-center mr-2 text-sm font-extrabold">1</span> 
+                        Unit 19-1: 正しい助動詞の選択 (ランダム順選択肢)
+                    </h3>
+                    <button onclick="checkSection('u19_1')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl text-xs font-bold transition shadow-md shadow-indigo-100">
+                        採点する
+                    </button>
+                </div>
+                <div id="u19_1-container" class="space-y-4"></div>
+            </div>
+
+            <!-- Unit 19-2 -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center">
+                        <span class="bg-indigo-100 text-indigo-700 w-8 h-8 rounded-xl flex items-center justify-center mr-2 text-sm font-extrabold">2</span> 
+                        Unit 19-2: 空欄補充・文完成 (空欄から適切な述語を選択)
+                    </h3>
+                    <button onclick="checkSection('u19_2')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl text-xs font-bold transition shadow-md shadow-indigo-100">
+                        採点する
+                    </button>
+                </div>
+                <div id="u19_2-container" class="space-y-4"></div>
+            </div>
+
+            <!-- Unit 19-3 -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center">
+                        <span class="bg-indigo-100 text-indigo-700 w-8 h-8 rounded-xl flex items-center justify-center mr-2 text-sm font-extrabold">3</span> 
+                        Unit 19-3: 肯定文からの否定文・疑問文への変換
+                    </h3>
+                    <button onclick="checkSection('u19_3')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl text-xs font-bold transition shadow-md shadow-indigo-100">
+                        採点する
+                    </button>
+                </div>
+                <div id="u19_3-container" class="space-y-4"></div>
+            </div>
+
+            <!-- Unit 19-4 -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center">
+                        <span class="bg-indigo-100 text-indigo-700 w-8 h-8 rounded-xl flex items-center justify-center mr-2 text-sm font-extrabold">4</span> 
+                        Unit 19-4: 語句整序・穴埋め完成問題
+                    </h3>
+                    <button onclick="checkSection('u19_4')" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl text-xs font-bold transition shadow-md shadow-indigo-100">
+                        採点する
+                    </button>
+                </div>
+                <div id="u19_4-container" class="space-y-4"></div>
+            </div>
+        </section>
+
+        <section id="tab-u20" class="tab-content space-y-8 hidden">
+            <div class="bg-pink-100 border border-pink-300 rounded-3xl p-6 sm:p-8 shadow-md">
+                <span class="bg-pink-200 text-pink-900 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Unit 20</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-pink-950 mt-2 mb-2">助動詞の発展 (完了形・推量・過去の習慣)</h2>
+                <p class="text-pink-900 text-sm font-medium">ヒントは答えそのものではなく概念的なヒントに刷新。発展的な慣用表現をドロップダウン選択でマスターしましょう。</p>
+            </div>
+
+            <!-- Unit 20-1 -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center">
+                        <span class="bg-pink-100 text-pink-700 w-8 h-8 rounded-xl flex items-center justify-center mr-2 text-sm font-extrabold">1</span> 
+                        Unit 20-1: 過去の推量 (must have done / can't have done等)
+                    </h3>
+                    <button onclick="checkSection('u20_1')" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-xl text-xs font-bold transition shadow-md shadow-pink-100">
+                        採点する
+                    </button>
+                </div>
+                <div id="u20_1-container" class="space-y-4"></div>
+            </div>
+
+            <!-- Unit 20-2 -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center">
+                        <span class="bg-pink-100 text-pink-700 w-8 h-8 rounded-xl flex items-center justify-center mr-2 text-sm font-extrabold">2</span> 
+                        Unit 20-2: 後悔・非難 (should have done / need not have done)
+                    </h3>
+                    <button onclick="checkSection('u20_2')" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-xl text-xs font-bold transition shadow-md shadow-pink-100">
+                        採点する
+                    </button>
+                </div>
+                <div id="u20_2-container" class="space-y-4"></div>
+            </div>
+
+            <!-- Unit 20-3 -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center">
+                        <span class="bg-pink-100 text-pink-700 w-8 h-8 rounded-xl flex items-center justify-center mr-2 text-sm font-extrabold">3</span> 
+                        Unit 20-3: 慣用表現 (used to / would / may well / might as well)
+                    </h3>
+                    <button onclick="checkSection('u20_3')" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-xl text-xs font-bold transition shadow-md shadow-pink-100">
+                        採点する
+                    </button>
+                </div>
+                <div id="u20_3-container" class="space-y-4"></div>
+            </div>
+
+            <!-- Unit 20-4 -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-lg font-bold text-slate-800 flex items-center">
+                        <span class="bg-pink-100 text-pink-700 w-8 h-8 rounded-xl flex items-center justify-center mr-2 text-sm font-extrabold">4</span> 
+                        Unit 20-4: 発展・穴埋め & ヒント付き選択問題
+                    </h3>
+                    <button onclick="checkSection('u20_4')" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-xl text-xs font-bold transition shadow-md shadow-pink-100">
+                        採点する
+                    </button>
+                </div>
+                <div id="u20_4-container" class="space-y-4"></div>
+            </div>
+        </section>
+
+        <!-- Verb & Noun Banks Tabs -->
+        <section id="tab-verbs" class="tab-content space-y-8 hidden">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100">
+                <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-bolt text-indigo-600 mr-2"></i> 重要動詞バンク (Verb Bank)
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" id="verb-bank-grid"></div>
+            </div>
+        </section>
+
+        <section id="tab-nouns" class="tab-content space-y-8 hidden">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100">
+                <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center">
+                    <i class="fa-solid fa-box-archive text-indigo-600 mr-2"></i> 重要名詞・語句バンク (Noun & Phrase Bank)
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" id="noun-bank-grid"></div>
+            </div>
+        </section>
+
+        <section id="tab-exam" class="tab-content space-y-8 hidden">
+            <div class="bg-gradient-to-r from-purple-200 to-indigo-200 rounded-3xl p-6 sm:p-8 text-slate-900 shadow-xl flex flex-wrap justify-between items-center border border-purple-300">
+                <div>
+                    <span class="bg-purple-300 text-purple-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider border border-purple-400">総合テスト</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold mt-2 mb-1 text-slate-900">助動詞 模擬試験 (全25問・5セクション構成)</h2>
+                    <p class="text-slate-800 text-sm font-semibold">5つの形式（空欄補充、和訳選択、並べ替えドラッグ＆ドロップ、助動詞選択、自由記述・自己採点）による全25問の総合演習です。解答は自動保存されます。</p>
+                </div>
+                <div class="mt-4 sm:mt-0 flex flex-wrap gap-2">
+                    <button onclick="submitExam()" class="bg-purple-700 hover:bg-purple-800 text-white px-5 py-2.5 rounded-2xl font-extrabold shadow-lg transition text-xs sm:text-sm">
+                        <i class="fa-solid fa-check-double mr-1"></i> 採点 & 自己採点
+                    </button>
+                    <button onclick="downloadExamPDF()" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2.5 rounded-2xl font-extrabold shadow-lg transition text-xs sm:text-sm">
+                        <i class="fa-solid fa-file-pdf mr-1"></i> PDF保存
+                    </button>
+                    <button onclick="resetExam()" class="bg-purple-100 hover:bg-purple-200 text-purple-950 px-3 py-2.5 rounded-2xl font-bold border border-purple-300 transition text-xs sm:text-sm">
+                        <i class="fa-solid fa-rotate-left mr-1"></i> リセット
+                    </button>
+                </div>
+            </div>
+
+            <!-- Score Banner -->
+            <div id="exam-score-banner" class="hidden bg-emerald-50 border border-emerald-200 rounded-3xl p-6 text-emerald-900 flex flex-wrap items-center justify-between shadow-md">
+                <div class="flex items-center space-x-4">
+                    <div class="bg-emerald-600 text-white w-12 h-12 rounded-2xl flex items-center justify-center text-xl font-black">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-extrabold">テスト採点結果 (選択問題: 20問)</h4>
+                        <p id="exam-score-text" class="text-sm font-medium">正解数: 0 / 20</p>
+                        <p class="text-xs text-emerald-700 mt-1">※自由記述5問は解答例を参考に自己採点してください。</p>
+                    </div>
+                </div>
+                <div id="exam-badge" class="mt-2 sm:mt-0 text-sm font-bold px-4 py-2 rounded-xl bg-emerald-200 text-emerald-800"></div>
+            </div>
+
+            <!-- Exam Print/PDF Container Wrapper -->
+            <div id="exam-pdf-area" class="space-y-8 bg-white p-4 sm:p-6 rounded-3xl shadow-lg border border-slate-100">
+                
+                <!-- Section 1: Fill in the blanks -->
+                <div class="space-y-4">
+                    <div class="border-b pb-2 border-indigo-100">
+                        <h3 class="text-lg font-bold text-indigo-900 flex items-center">
+                            <span class="bg-indigo-600 text-white w-7 h-7 rounded-lg flex items-center justify-center text-xs mr-2">1</span>
+                            Section 1: 空欄補充問題 (Q1 - Q5)
+                        </h3>
+                        <p class="text-xs text-slate-500">文脈に合わせて適切な助動詞・動詞句をドロップダウンメニューから選択してください。</p>
+                    </div>
+                    <div id="sec1-container" class="space-y-4"></div>
+                </div>
+
+                <!-- Section 2: Best translation from English to Japanese -->
+                <div class="space-y-4 pt-4">
+                    <div class="border-b pb-2 border-indigo-100">
+                        <h3 class="text-lg font-bold text-indigo-900 flex items-center">
+                            <span class="bg-indigo-600 text-white w-7 h-7 rounded-lg flex items-center justify-center text-xs mr-2">2</span>
+                            Section 2: 最適な和訳の選択問題 (Q6 - Q10)
+                        </h3>
+                        <p class="text-xs text-slate-500">英文の意味を最も正確に表している日本語訳を3つの選択肢から選んでください。</p>
+                    </div>
+                    <div id="sec2-container" class="space-y-4"></div>
+                </div>
+
+                <!-- Section 3: Rearrangement of words (Drag & Drop) -->
+                <div class="space-y-4 pt-4">
+                    <div class="border-b pb-2 border-indigo-100">
+                        <h3 class="text-lg font-bold text-indigo-900 flex items-center">
+                            <span class="bg-indigo-600 text-white w-7 h-7 rounded-lg flex items-center justify-center text-xs mr-2">3</span>
+                            Section 3: 語句整序・並べ替え問題 (Q11 - Q15)
+                        </h3>
+                        <p class="text-xs text-slate-500">単語ブロックをクリック（またはタップ）して枠内に配置し、正しい英文を完成させてください。</p>
+                    </div>
+                    <div id="sec3-container" class="space-y-6"></div>
+                </div>
+
+                <!-- Section 4: Choose the best Auxiliary verb -->
+                <div class="space-y-4 pt-4">
+                    <div class="border-b pb-2 border-indigo-100">
+                        <h3 class="text-lg font-bold text-indigo-900 flex items-center">
+                            <span class="bg-indigo-600 text-white w-7 h-7 rounded-lg flex items-center justify-center text-xs mr-2">4</span>
+                            Section 4: 適切な助動詞の選択問題 (Q16 - Q20)
+                        </h3>
+                        <p class="text-xs text-slate-500">括弧内の選択肢から、文脈上最も適切な助動詞を選びましょう。</p>
+                    </div>
+                    <div id="sec4-container" class="space-y-4"></div>
+                </div>
+
+                <!-- Section 5: Open-ended Free Writing & Self Check -->
+                <div class="space-y-4 pt-4">
+                    <div class="border-b pb-2 border-purple-200">
+                        <h3 class="text-lg font-bold text-purple-900 flex items-center">
+                            <span class="bg-purple-600 text-white w-7 h-7 rounded-lg flex items-center justify-center text-xs mr-2">5</span>
+                            Section 5: 英語自由記述 & 自己採点問題 (Q21 - Q25)
+                        </h3>
+                        <p class="text-xs text-slate-500">助動詞（can, should, might等）を用いて、あなたの言葉で英語で答えましょう。採点ボタンを押すと模範解答と自己採点ルーブリックが表示されます。</p>
+                    </div>
+                    <div id="sec5-container" class="space-y-6"></div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+            
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.className = "nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 hover:bg-slate-100";
+            });
+            const activeBtn = document.querySelector(`[data-tab="${tabId}"]`);
+            if (activeBtn) {
+                if (tabId === 'exam') {
+                    activeBtn.className = "nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-purple-600 text-white shadow-md shadow-purple-200";
+                } else {
+                    activeBtn.className = "nav-btn px-3 py-1.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-indigo-600 text-white shadow-md shadow-indigo-200";
+                }
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function shuffleOptions(optionsArray) {
+            let currentIndex = optionsArray.length, randomIndex;
+            while (currentIndex !== 0) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+                [optionsArray[currentIndex], optionsArray[randomIndex]] = [optionsArray[randomIndex], optionsArray[currentIndex]];
+            }
+            return optionsArray;
+        }
+
+        // Data banks...
+        const verbsData = [
+            { en: "can", jp: "…できる（能力・許可）" },
+            { en: "could", jp: "…できた / …していただけますか" },
+            { en: "may", jp: "…してもよい / …かもしれない" },
+            { en: "might", jp: "もしかすると…かもしれない" },
+            { en: "must", jp: "…しなければならない / …に違いない" },
+            { en: "must not", jp: "…してはならない（禁止）" },
+            { en: "should", jp: "…すべきである / …したほうがよい" },
+            { en: "shall", jp: "（shall I/we ~?）…しましょうか" },
+            { en: "will", jp: "…するだろう（意志・未来）" },
+            { en: "would", jp: "よく…したものだ / …だろうに" },
+            { en: "used to", jp: "以前はよく…したものだった" },
+            { en: "ought to", jp: "…すべきである" }
+        ];
+
+        const nounsData = [
+            { en: "ability", jp: "能力" },
+            { en: "permission", jp: "許可" },
+            { en: "obligation", jp: "義務" },
+            { en: "prohibition", jp: "禁止" },
+            { en: "possibility", jp: "可能性" },
+            { en: "advice", jp: "助言・アドバイス" },
+            { en: "regret", jp: "後悔" },
+            { en: "habit", jp: "習慣" }
+        ];
+
+        // Unit 19 and 20 Practice Data
+        const u19_1_data = [
+            { id: "u19_1_1", q: "エミリーは日本語をとても上手に話すことができます。", parts: ["Emily", "<select id='u19_1_1_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "speak Japanese very well."], ans: "can", options: ["must", "can", "should"] },
+            { id: "u19_1_2", q: "あなたはその本を明日までに返さなければなりません。", parts: ["You", "<select id='u19_1_2_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "return the book by tomorrow."], ans: "must", options: ["can", "must", "may"] },
+            { id: "u19_1_3", q: "あの男性は私たちの新しい英語の先生かもしれません。", parts: ["That man", "<select id='u19_1_3_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "be our new English teacher."], ans: "may", options: ["may", "must", "should"] },
+            { id: "u19_1_4", q: "私たちはもっと一生懸命に英語を勉強すべきです。", parts: ["We", "<select id='u19_1_4_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "study English harder."], ans: "should", options: ["can", "may", "should"] },
+            { id: "u19_1_5", q: "ここで写真を撮ってもよろしいですか？（許可）", parts: ["<select id='u19_1_5_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "I take pictures here?"], ans: "May", options: ["Must", "Will", "May"] }
+        ];
+
+        const u19_2_data = [
+            { id: "u19_2_1", q: "彼は外国人ですが、日本語を話すことができます。", hint: "能力を表す助動詞を選んで文を完成させよう", parts: ["He is a foreigner, but he", "<select id='u19_2_1_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "Japanese."], ans: "can speak", options: ["must speak", "can speak", "should speak"] },
+            { id: "u19_2_2", q: "今夜は雨が降るかもしれません。", hint: "推量を表す助動詞を選んで文を完成させよう", parts: ["It", "<select id='u19_2_2_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "tonight."], ans: "may rain", options: ["must rain", "should rain", "may rain"] },
+            { id: "u19_2_3", q: "私たちは図書館で静かにしなければなりません。", hint: "義務を表す助動詞を選んで文を完成させよう", parts: ["We", "<select id='u19_2_3_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "in the library."], ans: "must be quiet", options: ["can be quiet", "must be quiet", "may be quiet"] },
+            { id: "u19_2_4", q: "あなたはその医者に診てもらったほうがいい。", hint: "助言を表す助動詞を選んで文を完成させよう", parts: ["You", "<select id='u19_2_4_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "a doctor."], ans: "should see", options: ["must see", "can see", "should see"] }
+        ];
+
+        const u19_3_data = [
+            { id: "u19_3_1", q: "次の文を否定文にする場合、空欄に入る正しい助動詞を選ぼう: 『Ken can play the piano.』", instruction: "(否定文への書換)", parts: ["Ken", "<select id='u19_3_1_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "play the piano."], ans: "cannot", options: ["can", "cannot", "must"] },
+            { id: "u19_3_2", q: "次の文を疑問文にする場合、文頭に入る正しい助動詞を選ぼう: 『You must finish your homework today.』", instruction: "(疑問文への書換)", parts: ["<select id='u19_3_2_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "you finish your homework today?"], ans: "Must", options: ["Do", "Must", "Can"] },
+            { id: "u19_3_3", q: "次の文を「〜する必要はない（否定）」に書き換える場合、空欄に入る正しい表現を選ぼう: 『He must clean the room.』", instruction: "(不要・不必要の否定文への書換)", parts: ["He", "<select id='u19_3_3_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "clean the room."], ans: "need not", options: ["must not", "need not", "does not"] }
+        ];
+
+        const u19_4_data = [
+            { id: "u19_4_1", q: "「私に駅までの道を教えていただけますか」の丁寧な依頼表現を完成させよう", hint: "丁寧な依頼の表現を選ぼう", parts: ["<select id='u19_4_1_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "show me the way to the station?"], ans: "Could you", options: ["Can show you", "You could", "Could you"] },
+            { id: "u19_4_2", q: "「今夜、映画を見に行きませんか」の提案表現を完成させよう", hint: "相手への提案の表現を選ぼう", parts: ["<select id='u19_4_2_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "go to the movies tonight?"], ans: "Shall we", options: ["Will we", "Shall we", "Let us"] }
+        ];
+
+        const u20_1_data = [
+            { id: "u20_1_1", q: "彼は昨日、夜遅くまで起きていたに違いない。", hint: "【ヒント】過去の強い確信（〜だったに違いない）を表す助動詞＋have＋過去分詞の構造に注意しよう", parts: ["He", "<select id='u20_1_1_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "up late last night."], ans: "must have stayed", options: ["should have stayed", "may stay", "must have stayed"] },
+            { id: "u20_1_2", q: "彼女がそんなうそをつくはずがない。", hint: "【ヒント】過去の否定の確信（〜だったはずがない）を表す表現の組み合わせを確認しよう", parts: ["She", "<select id='u20_1_2_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "such a lie."], ans: "can not have told", options: ["must not have told", "can not have told", "should not have told"] }
+        ];
+
+        const u20_2_data = [
+            { id: "u20_2_1", q: "私はもっと一生懸命に勉強すべきだったのに。", hint: "【ヒント】過去の軽い後悔（〜すべきだったのに実際はしなかった）を表す表現を選ぼう", parts: ["I", "<select id='u20_2_1_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "harder for the exam."], ans: "should have studied", options: ["must have studied", "need have studied", "should have studied"] },
+            { id: "u20_2_2", q: "あなたはそんなに早く起きる必要はなかったのに。", hint: "【ヒント】〜する必要はなかったのに実際はしてしまったことを表す表現を考えよう", parts: ["You", "<select id='u20_2_2_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "up so early."], ans: "need not have gotten", options: ["should not have gotten", "must not have gotten", "need not have gotten"] }
+        ];
+
+        const u20_3_data = [
+            { id: "u20_3_1", q: "子どものころ、私はよくその川で泳いだものだ。", hint: "【ヒント】過去の習慣（かつてよく〜したものだった）を表す表現を選ぼう", parts: ["I", "<select id='u20_3_1_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "in that river when I was a child."], ans: "used to swim", options: ["would swim", "is used to swim", "used to swim"] },
+            { id: "u20_3_2", q: "彼がその真実を知っているのももっともだ。", hint: "【ヒント】〜するのももっともだ（〜するのも当然だ）を表す慣用表現を選ぼう", parts: ["He", "<select id='u20_3_2_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "the truth."], ans: "may well know", options: ["may as well know", "should know", "may well know"] }
+        ];
+
+        const u20_4_data = [
+            { id: "u20_4_1", q: "「どうせ歩くなら、今出発したほうがましだ」", hint: "【ヒント】〜したほうがましだ（〜するようなものだ）を表す慣用表現を選ぼう", parts: ["We", "<select id='u20_4_1_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "now."], ans: "might as well start", options: ["may well start", "should start", "might as well start"] },
+            { id: "u20_4_2", q: "「ここに以前は大きな教会があった」 (状態の過去)", hint: "【ヒント】かつて存在していた状態（〜があったものだ）を表す表現を選ぼう", parts: ["There", "<select id='u20_4_2_sel' class='border rounded px-2 py-1 mx-1 font-bold'></select>", "a big church here."], ans: "used to be", options: ["would be", "was used to", "used to be"] }
+        ];
+
+        // ------------------- NEW EXAM STRUCTURE DATA ------------------- //
+        // Section 1: Fill in the Blanks (Q1 - Q5)
+        const examSec1 = [
+            { id: "ex_s1_1", q: "Q1. You _______ wear a seatbelt while driving; it is required by law.", parts: ["You", "<select id='ex_s1_1_sel' onchange='saveExamState()' class='border border-indigo-300 rounded-xl px-3 py-1.5 font-bold text-slate-800 bg-white focus:ring-2 focus:ring-indigo-400'></select>", "wear a seatbelt while driving."], ans: "must", options: ["must", "may", "can"] },
+            { id: "ex_s1_2", q: "Q2. She _______ solve this complicated math problem by herself.", parts: ["She", "<select id='ex_s1_2_sel' onchange='saveExamState()' class='border border-indigo-300 rounded-xl px-3 py-1.5 font-bold text-slate-800 bg-white focus:ring-2 focus:ring-indigo-400'></select>", "solve this math problem."], ans: "can", options: ["can", "should have", "must not"] },
+            { id: "ex_s1_3", q: "Q3. I _______ studied harder for yesterday's English exam, but I didn't.", parts: ["I", "<select id='ex_s1_3_sel' onchange='saveExamState()' class='border border-indigo-300 rounded-xl px-3 py-1.5 font-bold text-slate-800 bg-white focus:ring-2 focus:ring-indigo-400'></select>", "for yesterday's exam."], ans: "should have studied", options: ["should have studied", "must study", "may study"] },
+            { id: "ex_s1_4", q: "Q4. Look at those dark clouds! It _______ rain very soon.", parts: ["It", "<select id='ex_s1_4_sel' onchange='saveExamState()' class='border border-indigo-300 rounded-xl px-3 py-1.5 font-bold text-slate-800 bg-white focus:ring-2 focus:ring-indigo-400'></select>", "rain very soon."], ans: "might", options: ["might", "must have", "used to"] },
+            { id: "ex_s1_5", q: "Q5. You _______ not eat snacks right before dinner.", parts: ["You", "<select id='ex_s1_5_sel' onchange='saveExamState()' class='border border-indigo-300 rounded-xl px-3 py-1.5 font-bold text-slate-800 bg-white focus:ring-2 focus:ring-indigo-400'></select>", "eat snacks before dinner."], ans: "should", options: ["should", "could have", "used to"] }
+        ];
+
+        // Section 2: Best translation from English to Japanese (Q6 - Q10)
+        const examSec2 = [
+            {
+                id: "ex_s2_1",
+                en: "Q6. He must have forgotten about our appointment today.",
+                ans: "彼は今日、私たちの約束を忘れたに違いない。",
+                options: [
+                    "彼は今日、私たちの約束を忘れたに違いない。",
+                    "彼は今日、私たちの約束を忘れるべきだったのに。",
+                    "彼は今日、私たちの約束を忘れたのかもしれない。"
+                ]
+            },
+            {
+                id: "ex_s2_2",
+                en: "Q7. You need not have bought such an expensive watch.",
+                ans: "そんなに高価な時計を買う必要はなかったのに（買ってしまった）。",
+                options: [
+                    "そんなに高価な時計を買ってはいけない。",
+                    "そんなに高価な時計を買う必要はなかったのに（買ってしまった）。",
+                    "そんなに高価な時計を買うことができなかった。"
+                ]
+            },
+            {
+                id: "ex_s2_3",
+                en: "Q8. My grandfather used to go fishing in this lake every Sunday.",
+                ans: "私の祖父は毎週日曜日にこの湖へ釣りに行っていたものだ。",
+                options: [
+                    "私の祖父は毎週日曜日にこの湖へ釣りに行くかもしれない。",
+                    "私の祖父は毎週日曜日にこの湖へ釣りに行くべきだ。",
+                    "私の祖父は毎週日曜日にこの湖へ釣りに行っていたものだ。"
+                ]
+            },
+            {
+                id: "ex_s2_4",
+                en: "Q9. She cannot have told such a foolish story.",
+                ans: "彼女がそんな愚かな話をしたはずがない。",
+                options: [
+                    "彼女はそんな愚かな話をするべきではなかった。",
+                    "彼女がそんな愚かな話をしたはずがない。",
+                    "彼女はそんな愚かな話をしたかもしれない。"
+                ]
+            },
+            {
+                id: "ex_s2_5",
+                en: "Q10. We might as well start walking right now.",
+                ans: "どうせなら私たちは今すぐ歩き始めたほうがいい。",
+                options: [
+                    "私たちは今すぐ歩き始めるに違いない。",
+                    "私たちは今すぐ歩き始めるべきではなかった。",
+                    "どうせなら私たちは今すぐ歩き始めたほうがいい。"
+                ]
+            }
+        ];
+
+        // Section 3: Word order rearrangement with chip interaction (Q11 - Q15)
+        const examSec3 = [
+            { id: "ex_s3_1", num: "Q11", jp: "彼女は日本語を流暢に話すことができる。", words: ["She", "can", "speak", "Japanese", "fluently."], correct: ["She", "can", "speak", "Japanese", "fluently."] },
+            { id: "ex_s3_2", num: "Q12", jp: "君はすぐにそのお医者さんに診てもらったほうがいい。", words: ["You", "should", "see", "a", "doctor", "at", "once."], correct: ["You", "should", "see", "a", "doctor", "at", "once."] },
+            { id: "ex_s3_3", num: "Q13", jp: "彼は昨夜、遅くまで起きていたに違いない。", words: ["He", "must", "have", "stayed", "up", "late.", "last", "night"], correct: ["He", "must", "have", "stayed", "up", "late.", "last", "night"] },
+            { id: "ex_s3_4", num: "Q14", jp: "窓を開けていただけますでしょうか？", words: ["Could", "you", "please", "open", "the", "window?"], correct: ["Could", "you", "please", "open", "the", "window?"] },
+            { id: "ex_s3_5", num: "Q15", jp: "子どものころ、私たちはよくここでサッカーをしたものだ。", words: ["We", "would", "often", "play", "soccer", "here."], correct: ["We", "would", "often", "play", "soccer", "here."] }
+        ];
+
+        // Section 4: Select best auxiliary verb in context (Q16 - Q20)
+        const examSec4 = [
+            { id: "ex_s4_1", q: "Q16. [ 許可 / 丁寧な依頼 ] Excuse me, ( May / Must / Should ) I leave the room for a moment?", ans: "May", options: ["May", "Must", "Should"] },
+            { id: "ex_s4_2", q: "Q17. [ 義務・当然 ] You look very tired. You ( should / may / cannot ) get some sleep.", ans: "should", options: ["should", "may", "cannot"] },
+            { id: "ex_s4_3", q: "Q18. [ 過去の強い確信 ] The ground is completely wet. It ( must have rained / should rain / can rain ) last night.", ans: "must have rained", options: ["must have rained", "should rain", "can rain"] },
+            { id: "ex_s4_4", q: "Q19. [ 過去の習慣 ] There ( used to be / might be / must be ) a bakery on this corner five years ago.", ans: "used to be", options: ["used to be", "might be", "must be"] },
+            { id: "ex_s4_5", q: "Q20. [ 慣用表現・〜するのももっともだ ] She ( may well be / might as well be / must be ) proud of her talented son.", ans: "may well be", options: ["may well be", "might as well be", "must be"] }
+        ];
+
+        // Section 5: Open-ended Questions (Q21 - Q25)
+        const examSec5 = [
+            {
+                id: "ex_s5_1",
+                num: "Q21",
+                en: "What can you do well?",
+                jp: "あなたはどのようなことが得意（上手）にできますか？",
+                placeholder: "e.g., I can play the piano very well. / I can speak two languages.",
+                model: "I can play basketball very well. / I can cook Japanese food.",
+                rubric: "「I can + 動詞の原形...」の形で自分の特技や能力を表現できているか。"
+            },
+            {
+                id: "ex_s5_2",
+                num: "Q22",
+                en: "What should you do every morning before school?",
+                jp: "毎朝登校する前に、あなたは何をすべきですか？",
+                placeholder: "e.g., I should eat breakfast and brush my teeth every morning.",
+                model: "I should eat a healthy breakfast and check my school bag.",
+                rubric: "「I should + 動詞の原形...」の形で毎朝すべき義務や習慣を述べられているか。"
+            },
+            {
+                id: "ex_s5_3",
+                num: "Q23",
+                en: "What might you do tonight with your friends?",
+                jp: "今夜、友達と何をするかもしれません（可能性があります）か？",
+                placeholder: "e.g., I might play video games with my friends tonight.",
+                model: "I might study English at the library or watch a movie with my friends.",
+                rubric: "「I might + 動詞の原形...」の形で今夜の予定・可能性を表現できているか。"
+            },
+            {
+                id: "ex_s5_4",
+                num: "Q24",
+                en: "What can you not do now, but want to become able to do?",
+                jp: "今はできないけれど、できるようになりたいことは何ですか？",
+                placeholder: "e.g., I cannot swim well, but I want to be able to swim fast.",
+                model: "I cannot speak French now, but I want to become able to speak it fluently.",
+                rubric: "できないこと（I cannot...）とできるようになりたいこと（I want to become able to...）を論理的に記述できているか。"
+            },
+            {
+                id: "ex_s5_5",
+                num: "Q25",
+                en: "What should Dahi (ダヒ) do to become a better human being?",
+                jp: "ダヒがより良い人間になるために、何をすべきでしょうか？",
+                placeholder: "e.g., Dahi should listen to other people carefully and help those in need.",
+                model: "Dahi should be kind to everyone, read good books, and always try to help others.",
+                rubric: "「Dahi (He/She) should + 動詞の原形...」の形で、人間的成長のための助言・提案が英語で書かれているか。"
+            }
+        ];
+
+        // Drag/Drop store for Section 3
+        let sec3State = {};
+
+        function renderExamSection1() {
+            const container = document.getElementById('sec1-container');
+            if (!container) return;
+            container.innerHTML = '';
+
+            examSec1.forEach(item => {
+                let shuffledOpts = [...item.options];
+                shuffleOptions(shuffledOpts);
+
+                let selectHtml = `<select id='${item.id}_sel' onchange='saveExamState()' class='border border-indigo-300 rounded-xl px-3 py-1.5 font-bold text-slate-800 bg-white focus:ring-2 focus:ring-indigo-400'>
+                    <option value=''>--選択--</option>`;
+                shuffledOpts.forEach(opt => {
+                    selectHtml += `<option value='${opt}'>${opt}</option>`;
+                });
+                selectHtml += `</select>`;
+
+                let renderedParts = item.parts.map(p => p.includes('select') ? selectHtml : p);
+
+                container.innerHTML += `
+                    <div class="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100 space-y-2">
+                        <p class="text-sm font-bold text-slate-800">${item.q}</p>
+                        <div class="flex flex-wrap items-center text-sm text-slate-700">${renderedParts.join(' ')}</div>
+                        <div id="${item.id}-feedback" class="text-xs font-bold mt-1"></div>
+                    </div>
+                `;
+            });
+        }
+
+        function renderExamSection2() {
+            const container = document.getElementById('sec2-container');
+            if (!container) return;
+            container.innerHTML = '';
+
+            examSec2.forEach(item => {
+                let shuffledOpts = [...item.options];
+                shuffleOptions(shuffledOpts);
+
+                let selectHtml = `<select id='${item.id}_sel' onchange='saveExamState()' class='w-full border border-indigo-300 rounded-xl px-3 py-2 font-semibold text-slate-800 bg-white focus:ring-2 focus:ring-indigo-400 text-xs sm:text-sm mt-1'>
+                    <option value=''>-- 正しい日本語訳を選択してください --</option>`;
+                shuffledOpts.forEach(opt => {
+                    selectHtml += `<option value='${opt}'>${opt}</option>`;
+                });
+                selectHtml += `</select>`;
+
+                container.innerHTML += `
+                    <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+                        <p class="text-sm font-extrabold text-indigo-950">${item.en}</p>
+                        <div>${selectHtml}</div>
+                        <div id="${item.id}-feedback" class="text-xs font-bold mt-1"></div>
+                    </div>
+                `;
+            });
+        }
+
+        function renderExamSection3() {
+            const container = document.getElementById('sec3-container');
+            if (!container) return;
+            container.innerHTML = '';
+
+            examSec3.forEach(item => {
+                // Shuffle initial word chips
+                if (!sec3State[item.id]) {
+                    let shuffled = [...item.words];
+                    shuffleOptions(shuffled);
+                    sec3State[item.id] = {
+                        available: shuffled,
+                        selected: []
+                    };
+                }
+
+                container.innerHTML += `
+                    <div class="p-4 sm:p-5 rounded-2xl bg-amber-50/60 border border-amber-200 space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-black bg-amber-200 text-amber-900 px-2.5 py-1 rounded-lg">${item.num}</span>
+                            <span class="text-xs font-bold text-slate-600">${item.jp}</span>
+                        </div>
+
+                        <!-- Target Answer Slot -->
+                        <div class="space-y-1">
+                            <p class="text-xs font-semibold text-slate-500">作成した英文:</p>
+                            <div id="${item.id}_slot" class="drop-slot p-2 sm:p-3 bg-white rounded-xl border-2 border-dashed border-amber-300 flex flex-wrap gap-2 items-center">
+                            </div>
+                        </div>
+
+                        <!-- Word Pool -->
+                        <div class="space-y-1">
+                            <p class="text-xs font-semibold text-slate-500">単語をタップして並べ替えてください:</p>
+                            <div id="${item.id}_pool" class="flex flex-wrap gap-2 p-2 bg-amber-100/50 rounded-xl min-h-[44px] items-center">
+                            </div>
+                        </div>
+
+                        <div id="${item.id}-feedback" class="text-xs font-bold"></div>
+                    </div>
+                `;
+            });
+
+            // Update chips DOM
+            examSec3.forEach(item => updateSec3Chips(item.id));
+        }
+
+        function updateSec3Chips(itemId) {
+            const poolEl = document.getElementById(`${itemId}_pool`);
+            const slotEl = document.getElementById(`${itemId}_slot`);
+            if (!poolEl || !slotEl) return;
+
+            const state = sec3State[itemId];
+
+            poolEl.innerHTML = '';
+            state.available.forEach((word, idx) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'drag-chip bg-white border border-amber-400 hover:bg-amber-100 text-amber-950 font-extrabold px-3 py-1.5 rounded-xl shadow-sm text-xs transition';
+                btn.innerText = word;
+                btn.onclick = () => {
+                    state.selected.push(word);
+                    state.available.splice(idx, 1);
+                    updateSec3Chips(itemId);
+                    saveExamState();
+                };
+                poolEl.appendChild(btn);
+            });
+
+            slotEl.innerHTML = '';
+            if (state.selected.length === 0) {
+                slotEl.innerHTML = `<span class="text-xs text-slate-400 italic">ここに単語が入ります</span>`;
+            } else {
+                state.selected.forEach((word, idx) => {
+                    const btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.className = 'drag-chip bg-amber-500 hover:bg-amber-600 text-white font-extrabold px-3 py-1.5 rounded-xl shadow-md text-xs transition flex items-center gap-1';
+                    btn.innerHTML = `${word} <i class="fa-solid fa-xmark text-[10px]"></i>`;
+                    btn.onclick = () => {
+                        state.available.push(word);
+                        state.selected.splice(idx, 1);
+                        updateSec3Chips(itemId);
+                        saveExamState();
+                    };
+                    slotEl.appendChild(btn);
+                });
+            }
+        }
+
+        function renderExamSection4() {
+            const container = document.getElementById('sec4-container');
+            if (!container) return;
+            container.innerHTML = '';
+
+            examSec4.forEach(item => {
+                let shuffledOpts = [...item.options];
+                shuffleOptions(shuffledOpts);
+
+                let selectHtml = `<select id='${item.id}_sel' onchange='saveExamState()' class='border border-indigo-300 rounded-xl px-3 py-1.5 font-bold text-slate-800 bg-white focus:ring-2 focus:ring-indigo-400'>
+                    <option value=''>-- 助動詞を選択 --</option>`;
+                shuffledOpts.forEach(opt => {
+                    selectHtml += `<option value='${opt}'>${opt}</option>`;
+                });
+                selectHtml += `</select>`;
+
+                let qText = item.q.replace(/\(.*?\)/g, (match) => {
+                    if (match.includes('/')) return selectHtml;
+                    return `<span class='text-xs font-bold bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded-md'>${match}</span>`;
+                });
+
+                container.innerHTML += `
+                    <div class="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100 space-y-2">
+                        <div class="text-sm font-bold text-slate-800 flex flex-wrap items-center gap-2">${qText}</div>
+                        <div id="${item.id}-feedback" class="text-xs font-bold mt-1"></div>
+                    </div>
+                `;
+            });
+        }
+
+        function renderExamSection5() {
+            const container = document.getElementById('sec5-container');
+            if (!container) return;
+            container.innerHTML = '';
+
+            examSec5.forEach(item => {
+                container.innerHTML += `
+                    <div class="p-5 rounded-2xl bg-purple-50/60 border border-purple-200 space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-black bg-purple-200 text-purple-900 px-2.5 py-1 rounded-lg">${item.num}</span>
+                            <span class="text-xs font-semibold text-purple-800">${item.jp}</span>
+                        </div>
+                        <p class="text-base font-extrabold text-slate-900">${item.en}</p>
+                        
+                        <textarea id="${item.id}_txt" oninput="saveExamState()" rows="3" placeholder="${item.placeholder}" class="w-full p-3 rounded-xl border border-purple-200 bg-white text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-purple-400 focus:outline-none"></textarea>
+
+                        <div id="${item.id}-selfcheck" class="hidden space-y-2 bg-white p-4 rounded-xl border border-purple-200">
+                            <div class="text-xs font-bold text-purple-950 flex items-center gap-1">
+                                <i class="fa-solid fa-lightbulb text-amber-500"></i> 模範解答例:
+                            </div>
+                            <p class="text-xs font-semibold text-slate-700 bg-purple-50 p-2.5 rounded-lg border border-purple-100">${item.model}</p>
+                            
+                            <div class="text-xs font-bold text-slate-700 mt-2">自己採点チェックポイント:</div>
+                            <p class="text-xs text-slate-600">${item.rubric}</p>
+
+                            <div class="flex items-center space-x-4 mt-2 pt-2 border-t border-purple-100">
+                                <span class="text-xs font-bold text-slate-700">自己評定:</span>
+                                <label class="text-xs font-bold text-emerald-700 flex items-center gap-1 cursor-pointer">
+                                    <input type="radio" name="${item.id}_eval" value="ok" onchange="saveExamState()"> 良くできた (Good)
+                                </label>
+                                <label class="text-xs font-bold text-amber-700 flex items-center gap-1 cursor-pointer">
+                                    <input type="radio" name="${item.id}_eval" value="review" onchange="saveExamState()"> 要見直し (Review)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        function checkSection(sectionKey) {
+            let dataList = [];
+            if (sectionKey === 'u19_1') dataList = u19_1_data;
+            if (sectionKey === 'u19_2') dataList = u19_2_data;
+            if (sectionKey === 'u19_3') dataList = u19_3_data;
+            if (sectionKey === 'u19_4') dataList = u19_4_data;
+            if (sectionKey === 'u20_1') dataList = u20_1_data;
+            if (sectionKey === 'u20_2') dataList = u20_2_data;
+            if (sectionKey === 'u20_3') dataList = u20_3_data;
+            if (sectionKey === 'u20_4') dataList = u20_4_data;
+
+            dataList.forEach(item => {
+                const sel = document.getElementById(`${item.id}_sel`);
+                const feedback = document.getElementById(`${item.id}-feedback`);
+                if (sel && feedback) {
+                    if (sel.value === item.ans) {
+                        feedback.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check mr-1"></i> 正解です！</span>`;
+                        sel.className = "border-2 border-emerald-500 bg-emerald-50 rounded px-2 py-1 mx-1 font-bold text-emerald-900";
+                    } else if (sel.value === "") {
+                        feedback.innerHTML = `<span class="text-amber-600"><i class="fa-solid fa-triangle-exclamation mr-1"></i> 選択してください。</span>`;
+                        sel.className = "border-2 border-amber-400 rounded px-2 py-1 mx-1 font-bold";
+                    } else {
+                        feedback.innerHTML = `<span class="text-rose-600"><i class="fa-solid fa-circle-xmark mr-1"></i> 不正解です。正解は「${item.ans}」です。</span>`;
+                        sel.className = "border-2 border-rose-500 bg-rose-50 rounded px-2 py-1 mx-1 font-bold text-rose-900";
+                    }
+                }
+            });
+        }
+
+        function submitExam() {
+            let autoScore = 0;
+
+            // Sec 1
+            examSec1.forEach(item => {
+                const sel = document.getElementById(`${item.id}_sel`);
+                const feedback = document.getElementById(`${item.id}-feedback`);
+                if (sel && feedback) {
+                    if (sel.value === item.ans) {
+                        autoScore++;
+                        feedback.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check mr-1"></i> 正解！</span>`;
+                        sel.className = "border-2 border-emerald-500 bg-emerald-50 rounded-xl px-3 py-1.5 font-bold text-emerald-900";
+                    } else if (sel.value === "") {
+                        feedback.innerHTML = `<span class="text-amber-600"><i class="fa-solid fa-triangle-exclamation mr-1"></i> 未選択です。</span>`;
+                        sel.className = "border-2 border-amber-400 rounded-xl px-3 py-1.5 font-bold";
+                    } else {
+                        feedback.innerHTML = `<span class="text-rose-600"><i class="fa-solid fa-circle-xmark mr-1"></i> 不正解。正解: 「${item.ans}」</span>`;
+                        sel.className = "border-2 border-rose-500 bg-rose-50 rounded-xl px-3 py-1.5 font-bold text-rose-900";
+                    }
+                }
+            });
+
+            // Sec 2
+            examSec2.forEach(item => {
+                const sel = document.getElementById(`${item.id}_sel`);
+                const feedback = document.getElementById(`${item.id}-feedback`);
+                if (sel && feedback) {
+                    if (sel.value === item.ans) {
+                        autoScore++;
+                        feedback.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check mr-1"></i> 正解！</span>`;
+                        sel.className = "w-full border-2 border-emerald-500 bg-emerald-50 rounded-xl px-3 py-2 font-semibold text-emerald-900 text-xs sm:text-sm mt-1";
+                    } else if (sel.value === "") {
+                        feedback.innerHTML = `<span class="text-amber-600"><i class="fa-solid fa-triangle-exclamation mr-1"></i> 未選択です。</span>`;
+                        sel.className = "w-full border-2 border-amber-400 rounded-xl px-3 py-2 font-semibold text-xs sm:text-sm mt-1";
+                    } else {
+                        feedback.innerHTML = `<span class="text-rose-600"><i class="fa-solid fa-circle-xmark mr-1"></i> 不正解。正解: 「${item.ans}」</span>`;
+                        sel.className = "w-full border-2 border-rose-500 bg-rose-50 rounded-xl px-3 py-2 font-semibold text-rose-900 text-xs sm:text-sm mt-1";
+                    }
+                }
+            });
+
+            // Sec 3
+            examSec3.forEach(item => {
+                const feedback = document.getElementById(`${item.id}-feedback`);
+                const userWords = sec3State[item.id] ? sec3State[item.id].selected : [];
+                const userSentence = userWords.join(' ');
+                const correctSentence = item.correct.join(' ');
+
+                if (userSentence === correctSentence) {
+                    autoScore++;
+                    if (feedback) feedback.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check mr-1"></i> 正解！素晴らしい並べ替えです。</span>`;
+                } else if (userWords.length === 0) {
+                    if (feedback) feedback.innerHTML = `<span class="text-amber-600"><i class="fa-solid fa-triangle-exclamation mr-1"></i> 単語を選択して並べ替えてください。</span>`;
+                } else {
+                    if (feedback) feedback.innerHTML = `<span class="text-rose-600"><i class="fa-solid fa-circle-xmark mr-1"></i> 不正解。正解の順序: 「${correctSentence}」</span>`;
+                }
+            });
+
+            // Sec 4
+            examSec4.forEach(item => {
+                const sel = document.getElementById(`${item.id}_sel`);
+                const feedback = document.getElementById(`${item.id}-feedback`);
+                if (sel && feedback) {
+                    if (sel.value === item.ans) {
+                        autoScore++;
+                        feedback.innerHTML = `<span class="text-emerald-600"><i class="fa-solid fa-circle-check mr-1"></i> 正解！</span>`;
+                        sel.className = "border-2 border-emerald-500 bg-emerald-50 rounded-xl px-3 py-1.5 font-bold text-emerald-900";
+                    } else if (sel.value === "") {
+                        feedback.innerHTML = `<span class="text-amber-600"><i class="fa-solid fa-triangle-exclamation mr-1"></i> 未選択です。</span>`;
+                        sel.className = "border-2 border-amber-400 rounded-xl px-3 py-1.5 font-bold";
+                    } else {
+                        feedback.innerHTML = `<span class="text-rose-600"><i class="fa-solid fa-circle-xmark mr-1"></i> 不正解。正解: 「${item.ans}」</span>`;
+                        sel.className = "border-2 border-rose-500 bg-rose-50 rounded-xl px-3 py-1.5 font-bold text-rose-900";
+                    }
+                }
+            });
+
+            // Sec 5: Show self-check blocks
+            examSec5.forEach(item => {
+                const selfcheckEl = document.getElementById(`${item.id}-selfcheck`);
+                if (selfcheckEl) selfcheckEl.classList.remove('hidden');
+            });
+
+            const banner = document.getElementById('exam-score-banner');
+            const scoreText = document.getElementById('exam-score-text');
+            const badge = document.getElementById('exam-badge');
+            banner.classList.remove('hidden');
+            scoreText.innerText = `選択問題正解数: ${autoScore} / 20 問 (${Math.round((autoScore/20)*100)}%)`;
+
+            if (autoScore === 20) {
+                badge.innerText = "選択テスト満点！🎉";
+                badge.className = "text-sm font-bold px-4 py-2 rounded-xl bg-purple-600 text-white shadow-md";
+            } else if (autoScore >= 15) {
+                badge.innerText = "合格ライン達成！🏆";
+                badge.className = "text-sm font-bold px-4 py-2 rounded-xl bg-emerald-600 text-white shadow-md";
+            } else {
+                badge.innerText = "もう一度見直してみよう 💪";
+                badge.className = "text-sm font-bold px-4 py-2 rounded-xl bg-amber-500 text-white shadow-md";
+            }
+
+            saveExamState();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function resetExam() {
+            examSec1.forEach(item => {
+                const sel = document.getElementById(`${item.id}_sel`);
+                const feedback = document.getElementById(`${item.id}-feedback`);
+                if (sel) { sel.value = ""; sel.className = "border border-indigo-300 rounded-xl px-3 py-1.5 font-bold text-slate-800 bg-white"; }
+                if (feedback) feedback.innerHTML = "";
+            });
+
+            examSec2.forEach(item => {
+                const sel = document.getElementById(`${item.id}_sel`);
+                const feedback = document.getElementById(`${item.id}-feedback`);
+                if (sel) { sel.value = ""; sel.className = "w-full border border-indigo-300 rounded-xl px-3 py-2 font-semibold text-slate-800 bg-white text-xs sm:text-sm mt-1"; }
+                if (feedback) feedback.innerHTML = "";
+            });
+
+            examSec3.forEach(item => {
+                let shuffled = [...item.words];
+                shuffleOptions(shuffled);
+                sec3State[item.id] = { available: shuffled, selected: [] };
+                updateSec3Chips(item.id);
+                const feedback = document.getElementById(`${item.id}-feedback`);
+                if (feedback) feedback.innerHTML = "";
+            });
+
+            examSec4.forEach(item => {
+                const sel = document.getElementById(`${item.id}_sel`);
+                const feedback = document.getElementById(`${item.id}-feedback`);
+                if (sel) { sel.value = ""; sel.className = "border border-indigo-300 rounded-xl px-3 py-1.5 font-bold text-slate-800 bg-white"; }
+                if (feedback) feedback.innerHTML = "";
+            });
+
+            examSec5.forEach(item => {
+                const txt = document.getElementById(`${item.id}_txt`);
+                const selfcheckEl = document.getElementById(`${item.id}-selfcheck`);
+                if (txt) txt.value = "";
+                if (selfcheckEl) selfcheckEl.classList.add('hidden');
+                document.querySelectorAll(`input[name="${item.id}_eval"]`).forEach(r => r.checked = false);
+            });
+
+            document.getElementById('exam-score-banner').classList.add('hidden');
+            localStorage.removeItem('aux_verbs_exam_saved');
+        }
+
+        // Local Storage Persistence
+        function saveExamState() {
+            const state = {
+                sec1: {},
+                sec2: {},
+                sec3: sec3State,
+                sec4: {},
+                sec5Text: {},
+                sec5Eval: {}
+            };
+
+            examSec1.forEach(item => {
+                const sel = document.getElementById(`${item.id}_sel`);
+                if (sel) state.sec1[item.id] = sel.value;
+            });
+
+            examSec2.forEach(item => {
+                const sel = document.getElementById(`${item.id}_sel`);
+                if (sel) state.sec2[item.id] = sel.value;
+            });
+
+            examSec4.forEach(item => {
+                const sel = document.getElementById(`${item.id}_sel`);
+                if (sel) state.sec4[item.id] = sel.value;
+            });
+
+            examSec5.forEach(item => {
+                const txt = document.getElementById(`${item.id}_txt`);
+                if (txt) state.sec5Text[item.id] = txt.value;
+
+                const evalCheck = document.querySelector(`input[name="${item.id}_eval"]:checked`);
+                if (evalCheck) state.sec5Eval[item.id] = evalCheck.value;
+            });
+
+            localStorage.setItem('aux_verbs_exam_saved', JSON.stringify(state));
+        }
+
+        function loadExamState() {
+            const savedRaw = localStorage.getItem('aux_verbs_exam_saved');
+            if (!savedRaw) return;
+
+            try {
+                const state = JSON.parse(savedRaw);
+
+                if (state.sec1) {
+                    Object.keys(state.sec1).forEach(id => {
+                        const sel = document.getElementById(`${id}_sel`);
+                        if (sel) sel.value = state.sec1[id];
+                    });
+                }
+
+                if (state.sec2) {
+                    Object.keys(state.sec2).forEach(id => {
+                        const sel = document.getElementById(`${id}_sel`);
+                        if (sel) sel.value = state.sec2[id];
+                    });
+                }
+
+                if (state.sec3) {
+                    sec3State = state.sec3;
+                    examSec3.forEach(item => updateSec3Chips(item.id));
+                }
+
+                if (state.sec4) {
+                    Object.keys(state.sec4).forEach(id => {
+                        const sel = document.getElementById(`${id}_sel`);
+                        if (sel) sel.value = state.sec4[id];
+                    });
+                }
+
+                if (state.sec5Text) {
+                    Object.keys(state.sec5Text).forEach(id => {
+                        const txt = document.getElementById(`${id}_txt`);
+                        if (txt) txt.value = state.sec5Text[id];
+                    });
+                }
+
+                if (state.sec5Eval) {
+                    Object.keys(state.sec5Eval).forEach(id => {
+                        const radio = document.querySelector(`input[name="${id}_eval"][value="${state.sec5Eval[id]}"]`);
+                        if (radio) radio.checked = true;
+                    });
+                }
+            } catch (e) {
+                console.error("Error loading exam state:", e);
+            }
+        }
+
+        // PDF Export Function
+        function downloadExamPDF() {
+            submitExam(); // ensure state & feedback updated
+            const element = document.getElementById('exam-pdf-area');
+            const opt = {
+                margin:       0.3,
+                filename:     'Auxiliary_Verbs_Exam_Results.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 2, useCORS: true },
+                jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+            html2pdf().set(opt).from(element).save();
+        }
+
+        function renderSection(containerId, dataArray) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            container.innerHTML = '';
+            
+            dataArray.forEach((item) => {
+                let shuffledOpts = [...item.options];
+                shuffleOptions(shuffledOpts);
+                
+                let selectHtml = `<select id='${item.id}_sel' class='border rounded px-2 py-1 mx-1 font-bold'><option value=''>--選択--</option>`;
+                shuffledOpts.forEach(opt => {
+                    selectHtml += `<option value='${opt}'>${opt}</option>`;
+                });
+                selectHtml += `</select>`;
+
+                let renderedParts = item.parts.map(p => p.includes('select') ? selectHtml : p);
+
+                let htmlStr = `<div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+                    <p class="text-sm font-bold text-slate-800">${item.q}</p>`;
+                if (item.hint) {
+                    htmlStr += `<p class="text-xs text-indigo-700 font-semibold bg-indigo-50 p-2 rounded-xl"><i class="fa-solid fa-circle-info mr-1"></i>${item.hint}</p>`;
+                }
+                if (item.instruction) {
+                    htmlStr += `<p class="text-xs text-pink-700 font-bold">${item.instruction}</p>`;
+                }
+                htmlStr += `<div class="flex flex-wrap items-center text-sm text-slate-700 mt-2">${renderedParts.join(' ')}</div>
+                    <div id="${item.id}-feedback" class="text-xs font-bold mt-1"></div>
+                </div>`;
+                container.innerHTML += htmlStr;
+            });
+        }
+
+        function renderBanks() {
+            const verbGrid = document.getElementById('verb-bank-grid');
+            if (verbGrid) {
+                verbGrid.innerHTML = verbsData.map(v => `
+                    <div class="p-4 rounded-2xl bg-indigo-50/60 border border-indigo-100 flex flex-col justify-between">
+                        <span class="text-lg font-black text-indigo-700">${v.en}</span>
+                        <span class="text-xs text-slate-600 mt-1">${v.jp}</span>
+                    </div>
+                `).join('');
+            }
+
+            const nounGrid = document.getElementById('noun-bank-grid');
+            if (nounGrid) {
+                nounGrid.innerHTML = nounsData.map(n => `
+                    <div class="p-4 rounded-2xl bg-pink-50/60 border border-pink-100 flex flex-col justify-between">
+                        <span class="text-lg font-black text-pink-700">${n.en}</span>
+                        <span class="text-xs text-slate-600 mt-1">${n.jp}</span>
+                    </div>
+                `).join('');
+            }
+        }
+
+        window.onload = function() {
+            renderSection('u19_1-container', u19_1_data);
+            renderSection('u19_2-container', u19_2_data);
+            renderSection('u19_3-container', u19_3_data);
+            renderSection('u19_4-container', u19_4_data);
+            renderSection('u20_1-container', u20_1_data);
+            renderSection('u20_2-container', u20_2_data);
+            renderSection('u20_3-container', u20_3_data);
+            renderSection('u20_4-container', u20_4_data);
+
+            renderExamSection1();
+            renderExamSection2();
+            renderExamSection3();
+            renderExamSection4();
+            renderExamSection5();
+            renderBanks();
+
+            loadExamState();
+        };
+    </script>
+</body>
+</html>
